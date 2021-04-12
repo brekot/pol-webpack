@@ -1,0 +1,77 @@
+.main-footer {
+    background-color: var(--bg1);
+    padding: 40px 0;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 0 0 40px;
+    }
+    &__link {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: block;
+        margin: 15px 0 0;
+
+        &:hover {
+            color: var(--purple-light);
+        }
+    }
+    &__btn {
+        width: 160px;
+    }
+    &__copy {
+        font-size: 10px;
+        color: var(--grey1);
+    }
+}
+
+.social-block {
+    margin: 0 0 -16px;
+
+    &__title {
+        color: var(--purple-light);
+        text-transform: uppercase;
+        font-size: 12px;
+        margin: 0 0 15px;
+    }
+    &__links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__link {
+        height: 33px;
+        width: 33px;
+        background-color: var(--white);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 7px;
+        fill: var(--purple-dark);
+
+        &:hover {
+            background-color: var(--purple-dark);
+            fill: var(--white);
+        }
+    }
+    &__icon {
+
+        &_ig {
+            width: 22px;
+            height: 22px;
+        }
+        &_fb {
+            width: 11px;
+            height: 21px;
+        }
+        &_vk {
+            width: 21px;
+            height: 12px;
+        }
+    }
+}

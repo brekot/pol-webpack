@@ -1,0 +1,48 @@
+.btn {
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 0 70px;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+
+    &-purple {
+        background-color: var(--purple-dark);
+        color: var(--white);
+        border: none;
+
+        &:hover {
+            background-color: var(--purple-light);
+            color: var(--white);
+        }
+    }
+    &-white {
+        background-color: transparent;
+        color: var(--purple-dark);
+        border: 1px solid var(--purple-dark);
+
+        &:hover {
+            color: var(--purple-light);
+            border: 1px solid var(--purple-light);
+        }
+    }
+
+    &-md {
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    &-full-width {
+        width: 100%;
+        padding: 0;
+    }
+
+    &-padding-sm {
+        padding: 0 40px;
+    }
+}

@@ -1,27 +1,16 @@
 :root {
-    --black: #2A313C;
-    --black-dark: #000;
+    --black: #000;
     --white: #FFF;
-    --green: #46CE97;
-    --red: #FF8484;
-    --red-dark: #b71335;
-    --red-middle: #C8132C;
-    --yellow: #FDD4B3;
-    --blue: #1F86FF;
-    --bg: #19202b;
 
-    --background: #F3F4F6;
-    --link: #586C78;
-    --link-abs: #006496;
-    --white_contur: #DADCE1;
-    --gray_contur: #B5BAC3;
-    --blacksuper: #383F4B;
+    --purple-dark-opacity: rgba(162, 123, 181, .4);
+    --purple-dark: #4C2770;
+    --purple-light: #A783BA;
 
-    --bronze: #ACA28C;
-    --silver: #A9A8AA;
-    --gold: #E0CB8B;
+    --bg1: #F6F3F8;
 
-    --text-bg: rgba(0, 100, 150, .15);
+    --grey1: #AAA;
+    --grey2: #F3F3F3;
+    --grey3: #67747D;
 }
 
 $grid-breakpoints: (
@@ -29,22 +18,14 @@ $grid-breakpoints: (
     sm: 576px,
     md: 768px,
     lg: 992px,
-	xl: 1280px
+	xl: 1250px
 );
 
 $container-max-widths: (
     sm: 540px,
     md: 720px,
     lg: 960px,
-	xl: 1260px
+	xl: 1230px
 );
 
 $gutter: 30px;
-
-.bg-white {
-    background-color: var(--white);
-}
-
-.fix-html {
-    height: 100%;
-}

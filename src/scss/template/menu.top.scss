@@ -1,0 +1,16 @@
+.menu-top {
+    display: flex;
+    align-items: center;
+
+    &__link {
+        color: var(--black);
+        font-size: 12px;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 0 40px 0 0;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.index-doctor {
+
+    &__inner {
+        padding: 155px 135px;
+        display: flex;
+        align-items: center;
+    }
+    &__pict {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__info {
+        padding: 0 0 0 75px;
+    }
+    &__name {
+        font-size: 40px;
+        font-weight: bold;
+        margin: 0 0 10px;
+    }
+    &__dol {
+        color: var(--grey3);
+        margin: 0 0 35px;
+        text-transform: uppercase;
+    }
+}

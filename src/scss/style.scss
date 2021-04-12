@@ -1,4 +1,23 @@
 // Основное
+@import "./main/fonts"; // Шрифты
 @import "./main/variables"; // Переменные
 @import "./main/grid"; // Сетка
 @import "./main/reboot"; // Сброс стилей
+
+// Элементы
+@import "./elem/elem"; // Элементы
+@import "./elem/leaf"; // Зеленый листок
+@import "./elem/btn"; // Кнопки
+@import "./elem/select"; // Селекты
+
+// Шаблон
+@import "./template/header"; // Шапка
+@import "./template/menu.top"; // Верхнее меню
+@import "./template/main"; // Рабочая область
+@import "./template/footer"; // Подвал
+@import "./template/menu.bottom"; // Нижнее меню
+
+// Главная страница
+@import "./pages/index/slider"; // Слайдер
+@import "./pages/index/doctor"; // Врач
+@import "./pages/index/work"; // Как это работает

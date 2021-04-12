@@ -1,0 +1,33 @@
+.index-work {
+    background-color: var(--bg1);
+    padding: 115px 0 85px;
+    margin: 0 0 90px;
+
+    &__items {
+        margin: 65px 0 90px;
+        display: flex;
+    }
+    &__item {
+        width: 25%;
+    }
+    &__pict {
+        width: 125px;
+        height: 125px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--white);
+        border-radius: 50%;
+        border: 1px solid var(--purple-dark-opacity);
+        margin: 0 auto 55px;
+    }
+    &__text {
+        text-align: center;
+        width: 245px;
+        font-size: 18px;
+        margin: auto;
+    }
+    &__btn {
+        text-align: center;
+    }
+}
