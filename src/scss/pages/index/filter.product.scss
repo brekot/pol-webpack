@@ -1,0 +1,19 @@
+.index-filter-product {
+
+    &__parts {
+        margin: 35px 0 85px;
+        display: flex;
+        padding: 0 0 135px;
+        border-bottom: 3px solid var(--purple-light2);
+    }
+    &__left {
+        width: 280px;
+        border-right: 1px solid var(--grey4);
+        padding: 50px 40px 0 0;
+        margin: 20px 0 0;
+    }
+    &__right {
+        width: calc(100% - 280px);
+        padding: 0 0 0 45px;
+    }
+}

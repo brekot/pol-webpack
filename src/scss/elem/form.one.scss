@@ -1,0 +1,20 @@
+.form-one {
+
+    &__label {
+        font-weight: bold;
+        margin: 0 0 10px;
+
+        &_check-margin {
+            margin-left: 35px;
+        }
+        &_big-margin {
+            margin: 0 0 20px;
+        }
+        &_grey {
+            color: var(--grey5);
+        }
+    }
+    &__mb-big {
+        margin: 0 0 50px;
+    }
+}

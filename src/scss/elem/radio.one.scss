@@ -1,0 +1,49 @@
+.radio-one {
+    margin: 0 0 15px;
+    position: relative;
+    cursor: pointer;
+
+    &__input {
+        position: absolute;
+        opacity: 0;
+    }
+    &__point {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border: 1px solid var(--grey4);
+        border-radius: 50%;
+        left: 0;
+        top: 2px;
+        transition: .5s;
+    }
+    &__label {
+        margin: 0 0 0 35px;
+        transition: .5s;
+
+        &_bold {
+            font-weight: bold;
+        }
+    }
+
+    &:hover &__point,
+    &__input:checked ~ &__point {
+        border-color: var(--purple-light2);
+    }
+    &:hover &__label,
+    &__input:checked ~ &__label {
+        color: var(--purple-dark);
+    }
+
+    &__input:checked ~ &__point:before {
+        content: "";
+        position: absolute;
+        height: 12px;
+        width: 12px;
+        background-color: var(--purple-dark);
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

@@ -1,0 +1,44 @@
+.checkbox-one {
+    position: relative;
+    cursor: pointer;
+
+    &__input {
+        position: absolute;
+        opacity: 0;
+    }
+    &__point {
+        position: absolute;
+        height: 26px;
+        width: 26px;
+        border: 1px solid var(--grey4);
+        border-radius: 3px;
+        left: 0;
+        top: -1px;
+        transition: .5s;
+    }
+    &__label {
+        margin: 0 0 0 40px;
+        transition: .5s;
+    }
+
+    &:hover &__point,
+    &__input:checked ~ &__point {
+        border-color: var(--purple-light2);
+    }
+    &:hover &__label,
+    &__input:checked ~ &__label {
+        color: var(--purple-dark);
+    }
+
+    &__input:checked ~ &__point:before {
+        content: "";
+        position: absolute;
+        height: 16px;
+        width: 16px;
+        background-color: var(--purple-dark);
+        border-radius: 3px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+}

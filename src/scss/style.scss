@@ -9,6 +9,12 @@
 @import "./elem/leaf"; // Зеленый листок
 @import "./elem/btn"; // Кнопки
 @import "./elem/select"; // Селекты
+@import "./elem/form.one"; // Форма #1
+@import "./elem/radio.one"; // Radio #1
+@import "./elem/checkbox.one"; // Checkbox #1
+@import "./elem/filter.aside"; // Фильтр товаров
+@import "./elem/calc.block"; // Расчет
+@import "./elem/product.list"; // Список товаров
 
 // Шаблон
 @import "./template/header"; // Шапка
@@ -21,3 +27,5 @@
 @import "./pages/index/slider"; // Слайдер
 @import "./pages/index/doctor"; // Врач
 @import "./pages/index/work"; // Как это работает
+@import "./pages/index/filter.product"; // Фильтр и товары
+@import "./pages/index/quick.order"; // Быстрый заказ
