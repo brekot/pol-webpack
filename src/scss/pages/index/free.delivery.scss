@@ -1,0 +1,29 @@
+.free-delivery {
+
+    @include media-breakpoint-up(md)
+    {
+        & {
+            display: none;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            display: flex;
+            align-items: center;
+            background-color: var(--bg1);
+            padding: 20px;
+            justify-content: center;
+
+            &__title {
+                width: 130px;
+                margin: 0 40px 0 0;
+            }
+            &__icon {
+                width: 81px;
+                height: 97px;
+                fill: var(--purple-light2);
+            }
+        }
+    }
+}

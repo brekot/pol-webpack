@@ -46,4 +46,14 @@
         top: 50%;
         transform: translate(-50%, -50%);
     }
+
+    @include media-breakpoint-down(sm)
+    {
+        &__point {
+            top: 0;
+        }
+        &__label {
+            margin: 0 0 0 30px;
+        }
+    }
 }

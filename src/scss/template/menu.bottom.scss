@@ -1,7 +1,7 @@
 .menu-bottom {
     display: flex;
     align-items: center;
-    max-width: 265px;
+    max-width: 215px;
     flex-wrap: wrap;
 
     &__link {
@@ -13,6 +13,17 @@
 
         &:hover {
             text-decoration: underline;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    @include media-breakpoint-down(md)
+    {
+        & {
+            max-width: 265px;
+            justify-content: space-between;
         }
     }
 }

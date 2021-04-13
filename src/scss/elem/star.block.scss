@@ -1,0 +1,19 @@
+.star-block {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0;
+
+    &__point {
+        stroke: var(--orange);
+        fill: var(--white);
+        margin: 0 7px 0 0;
+
+        &_active {
+            fill: var(--orange);
+        }
+    }
+    &__icon {
+        width: 18px;
+        height: 17px;
+    }
+}

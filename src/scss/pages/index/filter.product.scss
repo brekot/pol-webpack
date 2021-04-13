@@ -16,4 +16,37 @@
         width: calc(100% - 280px);
         padding: 0 0 0 45px;
     }
+
+    @include media-breakpoint-only(lg)
+    {
+        &__right {
+            padding: 0 0 0 15px;
+        }
+    }
+    @include media-breakpoint-only(md)
+    {
+        &__parts {
+            margin: 35px 0 50px;
+            padding: 0 0 50px;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        &__parts {
+            margin: 30px 0 60px;
+            padding: 0;
+            border-bottom: none;
+            flex-direction: column;
+        }
+        &__left {
+            width: 100%;
+            border-right: none;
+            padding: 0;
+            margin: 0 0 50px;
+        }
+        &__right {
+            width: 100%;
+            padding: 0;
+        }
+    }
 }

@@ -9,6 +9,7 @@
     }
     &__item {
         width: 25%;
+        padding: 0 15px;
     }
     &__pict {
         width: 125px;
@@ -23,11 +24,54 @@
     }
     &__text {
         text-align: center;
-        width: 245px;
+        max-width: 245px;
         font-size: 18px;
         margin: auto;
     }
     &__btn {
         text-align: center;
+    }
+
+    @include media-breakpoint-only(md)
+    {
+        & {
+            padding: 50px 0;
+            margin: 0 0 50px;
+
+            &__items {
+                margin: 50px 0 20px;
+                flex-wrap: wrap;
+            }
+            &__item {
+                width: 50%;
+                padding: 0 15px;
+                margin: 0 0 30px;
+            }
+            &__pict {
+                margin: 0 auto 20px;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            padding: 40px 0;
+            margin: 0 0 30px;
+
+            &__items {
+                margin: 20px 0 10px;
+                flex-wrap: wrap;
+            }
+            &__item {
+                width: 50%;
+                margin: 0 0 30px;
+            }
+            &__pict {
+                margin: 0 auto 15px;
+            }
+            &__text {
+                font-size: 12px;
+            }
+        }
     }
 }

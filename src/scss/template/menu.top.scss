@@ -1,3 +1,43 @@
+.menu-top-btn {
+    display: flex;
+    width: 21px;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+
+    &__icon {
+        position: relative;
+        height: 2px;
+        display: block;
+
+        &,
+        &:before,
+        &:after {
+            width: 100%;
+            background-color: var(--purple-dark);
+        }
+        &:before,
+        &:after {
+            height: 100%;
+            content: "";
+            position: absolute;
+        }
+        &:before {
+            top: -6px;
+        }
+        &:after {
+            bottom: -6px;
+        }
+    }
+
+    @include media-breakpoint-up(lg)
+    {
+        & {
+            display: none;
+        }
+    }
+}
+
 .menu-top {
     display: flex;
     align-items: center;
@@ -11,6 +51,72 @@
 
         &:hover {
             text-decoration: underline;
+        }
+    }
+
+    @include media-breakpoint-up(lg)
+    {
+        &__close {
+            display: none;
+        }
+    }
+    @include media-breakpoint-only(lg)
+    {
+        &__link {
+            margin: 0 25px 0 0;
+        }
+    }
+    @include media-breakpoint-down(md)
+    {
+        & {
+            position: fixed;
+            flex-direction: column;
+            align-items: flex-start;
+            top: 0;
+            bottom: 0;
+            width: 300px;
+            left: 0;
+            background-color: var(--purple-light2);
+            padding: 30px;
+            transition: .5s;
+            transform: translate(-100%, 0);
+            z-index: 20;
+
+            &_active {
+                transform: none;
+            }
+            &__link {
+                font-size: 16px;
+                margin: 0 0 20px;
+                color: var(--white);
+
+                &:hover {
+                    color: var(--white);
+                }
+            }
+            &__close {
+                position: absolute;
+                right: 25px;
+                top: 27px;
+                height: 21px;
+                width: 21px;
+
+                &:before,
+                &:after {
+                    content: "";
+                    height: 100%;
+                    width: 2px;
+                    background-color: var(--white);
+                    position: absolute;
+                    right: 50%;
+                }
+                &:before {
+                    transform: rotate(45deg);
+                }
+                &:after {
+                    transform: rotate(-45deg);
+                }
+            }
         }
     }
 }

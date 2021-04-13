@@ -5,7 +5,7 @@
     &__inner {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         height: 130px;
     }
     &__menu {
@@ -25,8 +25,58 @@
     &__city {
         width: 170px;
     }
-    &__btn {
-        margin: 0 0 0 35px;
-        width: 160px;
+
+    @include media-breakpoint-up(lg)
+    {
+        &__enter {
+            margin: 0 0 0 35px;
+            width: 160px;
+        }
     }
-  }
+    @include media-breakpoint-only(lg)
+    {
+        &__enter {
+            margin: 0 0 0 15px;
+        }
+    }
+    @include media-breakpoint-down(md)
+    {
+        &__inner {
+            height: 60px;
+        }
+        &__logo {
+            width: 61px;
+        }
+        &__city {
+            display: none;
+        }
+    }
+}
+
+.enter-block {
+
+    @include media-breakpoint-up(lg)
+    {
+        &__mobile {
+            display: none;
+        }
+    }
+    @include media-breakpoint-down(md)
+    {
+        &__desktop {
+            display: none;
+        }
+        &__mobile {
+
+            &-icon {
+                width: 35px;
+                height: 28px;
+                fill: none;
+                stroke: var(--purple-dark);
+                stroke-width: 2;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+            }
+        }
+    }
+}

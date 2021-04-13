@@ -12,6 +12,31 @@
         width: 50%;
         padding: 0 0 0 15px;
     }
+
+    @include media-breakpoint-down(md)
+    {
+        & {
+            margin: 0 0 45px;
+
+            &__parts {
+                flex-direction: column;
+            }
+            &__left {
+                width: 100%;
+                padding: 30px 0 45px;
+            }
+            &__right {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        &__check {
+            margin: 40px 0 0;
+        }
+    }
 }
 
 .quick-order-check {
@@ -21,6 +46,19 @@
     &__item {
         width: 50%;
         margin: 0 0 65px;
+    }
+
+    @include media-breakpoint-only(md)
+    {
+        &__item {
+            margin: 0 0 25px;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        &__item {
+            margin: 0;
+        }
     }
 }
 
@@ -61,5 +99,37 @@
         font-weight: bold;
         color: var(--purple-dark);
         margin: 0 0 30px;
+    }
+
+    @include media-breakpoint-only(md)
+    {
+        & {
+            height: 440px;
+            padding: 45px 50px;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            height: 320px;
+            padding: 30px 0 20px 20px;
+            background-size: auto 235px;
+            display: flex;
+            flex-direction: column;
+            background-image: url(img/quick.order.bg.mobile.png);
+
+            &__items {
+                margin: 0 0 20px;
+            }
+            &__item {
+                font-size: 18px;
+            }
+            &__price {
+                font-size: 24px;
+            }
+            &__btn {
+                margin: auto 0 0;
+            }
+        }
     }
 }

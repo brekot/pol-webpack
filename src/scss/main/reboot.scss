@@ -22,6 +22,13 @@ body {
 	background-color: var(--white);
 }
 
+@include media-breakpoint-down(sm)
+{
+	body {
+		font-size: 16px;
+	}
+}
+
 hr {
     border: none;
     background-color: var(--black);
@@ -39,6 +46,14 @@ h1, .h1,
 h2, .h2 {
     font-weight: bold;
     font-size: 40px;
+}
+
+@include media-breakpoint-down(sm)
+{
+	h1, .h1,
+	h2, .h2 {
+		font-size: 22px;
+	}
 }
 
 p {

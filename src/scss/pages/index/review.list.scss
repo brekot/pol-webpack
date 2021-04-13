@@ -1,0 +1,130 @@
+.review-list {
+    background-color: var(--review-bg);
+    padding: 55px 0 135px;
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 70px -25px 0;
+    }
+    &__item {
+        width: calc(50% - 50px);
+        margin: 0 25px;
+        padding: 40px 0;
+        border-bottom: 1px solid var(--grey4);
+        font-size: 16px;
+    }
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0 10px;
+    }
+    &__pict {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    &__right {
+        width: calc(100% - 125px);
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    &__middle {
+        width: calc(100% - 125px);
+        margin: 0 0 0 auto;
+    }
+    &__title {
+        font-weight: bold;
+        margin: 0 0 15px;
+    }
+    &__text {
+        margin: 0 0 25px;
+    }
+    &__more {
+        color: var(--orange);
+        text-decoration: none;
+
+        &:hover {
+            color: var(--orange);
+            text-decoration: underline;
+        }
+    }
+    &__bottom {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__panel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 25px 0 0;
+    }
+
+    @include media-breakpoint-up(lg)
+    {
+        &__item {
+
+            &:nth-child(1),
+            &:nth-child(2) {
+                border-top: 1px solid var(--grey4);
+            }
+        }
+    }
+    @include media-breakpoint-down(md)
+    {
+        & {
+            padding: 50px 0;
+
+            &__items {
+                margin: 20px 0 0;
+            }
+            &__item {
+                width: 100%;
+                padding: 20px 0;
+                margin: 0;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        &__item:nth-child(4) {
+            display: none;
+        }
+        &__top {
+            margin: 0 0 25px;
+        }
+        &__pict {
+            height: 83px;
+            width: 83px;
+        }
+        &__right {
+            width: calc(100% - 105px);
+        }
+        &__name {
+            font-size: 16px;
+        }
+        &__middle {
+            width: 100%;
+        }
+        &__text {
+            font-size: 14px;
+        }
+        &__panel {
+            flex-direction: column-reverse;
+        }
+        &__btn {
+            margin: 25px 0 0;
+        }
+    }
+}

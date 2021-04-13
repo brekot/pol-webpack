@@ -4,6 +4,9 @@
 @import "./main/grid"; // Сетка
 @import "./main/reboot"; // Сброс стилей
 
+// lib
+@import "./lib/swiper"; // Swiper
+
 // Элементы
 @import "./elem/elem"; // Элементы
 @import "./elem/leaf"; // Зеленый листок
@@ -14,7 +17,11 @@
 @import "./elem/checkbox.one"; // Checkbox #1
 @import "./elem/filter.aside"; // Фильтр товаров
 @import "./elem/calc.block"; // Расчет
-@import "./elem/product.list"; // Список товаров
+@import "./elem/product.list"; // Товары список
+@import "./elem/product.slider"; // Товары слайдер
+@import "./elem/star.block"; // Звезды
+@import "./elem/like.block"; // Лайки
+@import "./elem/page.nav"; // Постраничная навигация
 
 // Шаблон
 @import "./template/header"; // Шапка
@@ -28,4 +35,6 @@
 @import "./pages/index/doctor"; // Врач
 @import "./pages/index/work"; // Как это работает
 @import "./pages/index/filter.product"; // Фильтр и товары
+@import "./pages/index/free.delivery"; // Бесплатная доставка (на мобильном)
 @import "./pages/index/quick.order"; // Быстрый заказ
+@import "./pages/index/review.list"; // Отзывы

@@ -4,9 +4,6 @@
         font-weight: bold;
         margin: 0 0 10px;
 
-        &_check-margin {
-            margin-left: 35px;
-        }
         &_big-margin {
             margin: 0 0 20px;
         }
@@ -14,7 +11,17 @@
             color: var(--grey5);
         }
     }
-    &__mb-big {
-        margin: 0 0 50px;
+
+    @include media-breakpoint-up(md)
+    {
+        &__label {
+
+            &_check-margin {
+                margin-left: 35px;
+            }
+        }
+        &__mb-big {
+            margin: 0 0 50px;
+        }
     }
 }
