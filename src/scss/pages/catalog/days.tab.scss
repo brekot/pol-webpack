@@ -1,0 +1,39 @@
+.days-tab {
+    background-color: var(--review-bg);
+    padding: 20px 0 30px;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__link {
+        color: var(--black);
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 0 0 10px;
+        border-bottom: 2px solid transparent;
+
+        &_active {
+            color: var(--purple-light2);
+            font-weight: bold;
+            border-color: var(--purple-light2);
+        }
+    }
+
+    @include media-breakpoint-only(md)
+    {
+        & {
+            font-size: 16px;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        &__inner {
+            overflow-x: auto;
+        }
+        &__link {
+            margin: 0 20px 0 0;
+        }
+    }
+}

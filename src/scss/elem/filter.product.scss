@@ -1,4 +1,4 @@
-.index-filter-product {
+.filter-product {
 
     &__parts {
         margin: 35px 0 85px;
@@ -47,6 +47,22 @@
         &__right {
             width: 100%;
             padding: 0;
+        }
+    }
+
+    &_inner &__parts {
+        margin: 45px 0 0;
+        border: none;
+    }
+    &_inner &__left {
+        padding: 0 40px 0 0;
+        margin: 0;
+    }
+
+    @include media-breakpoint-down(sm)
+    {
+        &_inner &__parts {
+            margin: 20px 0 0;
         }
     }
 }

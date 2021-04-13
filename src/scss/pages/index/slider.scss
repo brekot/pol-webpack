@@ -15,14 +15,13 @@
     }
     &:after {
         content: "";
-        background-color: var(--grey2);
+        background-color: var(--review-bg);
         position: absolute;
         left: 0;
         right: 0;
         top: 0;
         bottom: 0;
         z-index: 2;
-        opacity: .5;
     }
     &__block {
         position: relative;

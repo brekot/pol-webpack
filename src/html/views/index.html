@@ -1,908 +1,780 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<% var data = {
+    title: "Главная"
+}; %>
 
-    <title>Polzabox</title>
-</head>
-<body>
-    <div class="wrapper">
-        <header class="main-header">
-            <div class="container">
-                <div class="main-header__inner">
-                    <div class="main-header__menu">
-                        <a href="javascript:;" class="menu-top-btn">
-                            <span class="menu-top-btn__icon"></span>
-                        </a>
-                        <nav class="menu-top">
-                            <a href="javascript:;" class="menu-top__link">как это работает</a>
-                            <a href="javascript:;" class="menu-top__link">меню и тарифы</a>
-                            <a href="javascript:;" class="menu-top__link">отзывы</a>
-                            <a href="javascript:;" class="menu-top__close"></a>
-                        </nav>
-                    </div>
-                    <a href="/" class="main-header__logo">
-                        <img src="./local/img/logo.svg" alt="">
-                    </a>
-                    <div class="main-header__right">
-                        <div class="main-header__city">
-                            <select class="select-style">
-                                <option value="">Санкт-Петербург</option>
-                                <option value="">Москва</option>
-                                <option value="">Казань</option>
-                            </select>
-                        </div>
-                        <div class="main-header__enter">
-                            <div class="enter-block">
-                                <a href="javascript:;" class="enter-block__desktop btn btn-purple btn-full-width btn-md">Личный кабинет</a>
-                                <a href="javascript:;" class="enter-block__mobile">
-                                    <svg class="enter-block__mobile-icon">
-                                        <use xlink:href="./local/img/sprite.svg#enter"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<!-- Главный экран -->
+<div class="index-slider">
+    <div class="index-slider__block">
+        <div class="container">
+            <div class="index-slider__title">
+                Помогаем соблюдать диету по медицинским показаниям
             </div>
-        </header>
-        <main class="main-main">
-            <!-- End header.php -->
-
-            <div class="index-slider">
-                <div class="index-slider__block">
-                    <div class="container">
-                        <div class="index-slider__title">
-                            Помогаем соблюдать диету по медицинским показаниям
-                        </div>
-                        <div class="index-slider__desc">
-                            Не теряйте время на кухне и в продуктовом магазине
-                        </div>
-                        <div class="index-slider__btns">
-                            <a href="javascript:;" class="btn btn-full-width btn-purple index-slider__btn-first">Заказать</a>
-                            <a href="javascript:;" class="btn btn-padding-sm btn-white">Перезвонить мне</a>
-                        </div>
-                    </div>
-                </div>
-                <img src="./local/img/index.slider.img.png" class="index-slider__img d-none d-md-block">
-                <img src="./local/img/index.slider.img.mobile.png" class="index-slider__img d-md-none">
+            <div class="index-slider__desc">
+                Не теряйте время на кухне и в продуктовом магазине
             </div>
-
-            <div class="index-doctor">
-                <div class="container">
-                    <div class="index-doctor__inner">
-                        <div class="index-doctor__pict">
-                            <img src="./local/img/index.doctor.png" alt="" class="index-doctor__img d-none d-md-block">
-                            <img src="./local/img/index.doctor.mobile.png" alt="" class="index-doctor__img d-md-none">
-                        </div>
-                        <div class="index-doctor__info">
-                            <div class="index-doctor__name">
-                                Александра Белодедова
-                            </div>
-                            <div class="index-doctor__dol">
-                                ВРАЧ-ДИЕТОЛОГ, ГАСТРОЭНТЕРОЛОГ
-                            </div>
-                            <div class="index-doctor__text">
-                                Медицинский консультант<br> 
-                                нашего проекта.<br>
-                                Помогла нам разработать<br> 
-                                щадящую диету, а так же диету,<br> 
-                                рекомендованную при Диабете 2 типа.
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="index-slider__btns">
+                <a href="javascript:;" class="btn btn-full-width btn-purple index-slider__btn-first">Заказать</a>
+                <a href="javascript:;" class="btn btn-padding-sm btn-white">Перезвонить мне</a>
             </div>
-
-            <div class="index-work">
-                <div class="container">
-                    <div class="title-leaf">
-                        <svg class="title-leaf__icon title-leaf__icon_v1">
-                            <use xlink:href="./local/img/sprite.svg#leaf"></use>
-                        </svg>
-                        <h2 class="text-center mb-0 color-purple">Как это работает?</h2>
-                    </div>
-                    <div class="index-work__items">
-                        <div class="index-work__item">
-                            <div class="index-work__pict">
-                                <img src="./local/img/index.work.1.svg" alt="" class="index-work__img">
-                            </div>
-                            <div class="index-work__text">
-                                Наш диетолог разработал меню, рекомендованное по медицинским показаниям
-                            </div>
-                        </div>
-                        <div class="index-work__item">
-                            <div class="index-work__pict">
-                                <img src="./local/img/index.work.2.svg" alt="" class="index-work__img">
-                            </div>
-                            <div class="index-work__text">
-                                Готовим исключительно из свежих и натуральных продуктов
-                            </div>
-                        </div>
-                        <div class="index-work__item">
-                            <div class="index-work__pict">
-                                <img src="./local/img/index.work.3.svg" alt="" class="index-work__img">
-                            </div>
-                            <div class="index-work__text">
-                                Бесплатно доставим ваш заказ в пределах города
-                            </div>
-                        </div>
-                        <div class="index-work__item">
-                            <div class="index-work__pict">
-                                <img src="./local/img/index.work.4.svg" alt="" class="index-work__img">
-                            </div>
-                            <div class="index-work__text">
-                                Вы питаетесь правильно, вкусно и разнообразно
-                            </div>
-                        </div>
-                    </div>
-                    <div class="index-work__btn">
-                        <a href="javascript:;" class="btn btn-purple">Заказать</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="index-filter-product">
-                <div class="container">
-                    <div class="title-leaf">
-                        <svg class="title-leaf__icon title-leaf__icon_v2">
-                            <use xlink:href="./local/img/sprite.svg#leaf"></use>
-                        </svg>
-                        <h2 class="mb-0 color-purple">Меню сегодня</h2>
-                    </div>
-                    <div class="index-filter-product__parts">
-                        <div class="index-filter-product__left">
-
-                            <div class="filter-aside form-one">
-                                <div class="filter-aside__part">
-                                    <div class="form-one__label form-one__label_check-margin">Щадящая</div>
-                                    <div class="form-one__mb-big">
-                                        <label class="radio-one">
-                                            <input type="radio" class="radio-one__input" name="check" checked>
-                                            <div class="radio-one__point"></div>
-                                            <div class="radio-one__label">
-                                                1200 кКал
-                                            </div>
-                                        </label>
-                                        <label class="radio-one">
-                                            <input type="radio" class="radio-one__input" name="check">
-                                            <div class="radio-one__point"></div>
-                                            <div class="radio-one__label">
-                                                1600 кКал
-                                            </div>
-                                        </label>
-                                        <label class="radio-one">
-                                            <input type="radio" class="radio-one__input" name="check">
-                                            <div class="radio-one__point"></div>
-                                            <div class="radio-one__label">
-                                                2000 кКал
-                                            </div>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="filter-aside__part">
-                                    <label class="radio-one">
-                                        <input type="radio" class="radio-one__input" name="check" >
-                                        <div class="radio-one__point"></div>
-                                        <div class="radio-one__label radio-one__label_bold">
-                                            Диабет
-                                        </div>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="calc-block">
-                                <div class="calc-block__title">Пищевая ценность дня</div>
-                                <div class="calc-block__summ">1668 кКал</div>
-                                <div class="calc-block__lines">
-                                    <div class="calc-block__line">
-                                        Белки <span class="calc-block__count">97 гр.</span>
-                                    </div>
-                                    <div class="calc-block__line">
-                                        Жиры <span class="calc-block__count">97 гр.</span>
-                                    </div>
-                                    <div class="calc-block__line">
-                                        Углеводы <span class="calc-block__count">97 гр.</span>
-                                    </div>
-                                </div>
-                                <div class="calc-block__btn">
-                                    <a href="javascript:;" class="btn btn-purple btn-full-width">СМОТРЕТЬ МЕНЮ НЕДЕЛИ</a>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="index-filter-product__right">
-
-                            <div class="product-list">
-                                <a href="javascript:;" class="product-list__item">
-                                    <div class="product-list__top">
-                                        <div class="product-list__name">1 Прием</div>
-                                        <div class="product-list__info">180 г</div>
-                                        <div class="product-list__info">296 кКал</div>
-                                    </div>
-                                    <div class="product-list__pict">
-                                        <img class="product-list__img" src="./local/img/product.jpg" alt="">
-                                    </div>
-                                    <div class="product-list__text">
-                                        Фриттата с творогом, брокколи, моцареллой
-                                    </div>
-                                </a>
-                                <a href="javascript:;" class="product-list__item">
-                                    <div class="product-list__top">
-                                        <div class="product-list__name">2 Прием</div>
-                                        <div class="product-list__info">180 г</div>
-                                        <div class="product-list__info">296 кКал</div>
-                                    </div>
-                                    <div class="product-list__pict">
-                                        <img class="product-list__img" src="./local/img/product.jpg" alt="">
-                                    </div>
-                                    <div class="product-list__text">
-                                        Фриттата с творогом, брокколи, моцареллой
-                                    </div>
-                                </a>
-                                <a href="javascript:;" class="product-list__item">
-                                    <div class="product-list__top">
-                                        <div class="product-list__name">3 Прием</div>
-                                        <div class="product-list__info">180 г</div>
-                                        <div class="product-list__info">296 кКал</div>
-                                    </div>
-                                    <div class="product-list__pict">
-                                        <img class="product-list__img" src="./local/img/product.jpg" alt="">
-                                    </div>
-                                    <div class="product-list__text">
-                                        Фриттата с творогом, брокколи, моцареллой
-                                    </div>
-                                </a>
-                                <a href="javascript:;" class="product-list__item">
-                                    <div class="product-list__top">
-                                        <div class="product-list__name">4 Прием</div>
-                                        <div class="product-list__info">180 г</div>
-                                        <div class="product-list__info">296 кКал</div>
-                                    </div>
-                                    <div class="product-list__pict">
-                                        <img class="product-list__img" src="./local/img/product.jpg" alt="">
-                                    </div>
-                                    <div class="product-list__text">
-                                        Фриттата с творогом, брокколи, моцареллой
-                                    </div>
-                                </a>
-                                <a href="javascript:;" class="product-list__item">
-                                    <div class="product-list__top">
-                                        <div class="product-list__name">5 Прием</div>
-                                        <div class="product-list__info">180 г</div>
-                                        <div class="product-list__info">296 кКал</div>
-                                    </div>
-                                    <div class="product-list__pict">
-                                        <img class="product-list__img" src="./local/img/product.jpg" alt="">
-                                    </div>
-                                    <div class="product-list__text">
-                                        Фриттата с творогом, брокколи, моцареллой
-                                    </div>
-                                </a>
-                                <a href="javascript:;" class="product-list__free">
-                                    <div class="title-leaf">
-                                        <svg class="title-leaf__icon title-leaf__icon_v1">
-                                            <use xlink:href="./local/img/sprite.svg#leaf"></use>
-                                        </svg>
-                                        <h2 class="mb-0">Бесплатная доставка</h2>
-                                    </div>
-                                    <svg class="product-list__free-icon">
-                                        <use xlink:href="./local/img/sprite.svg#free-delivery"></use>
-                                    </svg>
-                                </a>
-                            </div>
-
-                            <div class="product-slider swiper-container">
-                                <div class="swiper-wrapper">
-                                    <a href="javascript:;" class="product-slider__item swiper-slide">
-                                        <div class="product-slider__top">
-                                            <div class="product-slider__name">1 Прием</div>
-                                            <div class="product-slider__info">180 г</div>
-                                            <div class="product-slider__info">296 кКал</div>
-                                        </div>
-                                        <div class="product-slider__pict">
-                                            <img class="product-slider__img" src="./local/img/product.jpg" alt="">
-                                        </div>
-                                        <div class="product-slider__text">
-                                            Фриттата с творогом, брокколи, моцареллой
-                                        </div>
-                                    </a>
-                                    <a href="javascript:;" class="product-slider__item swiper-slide">
-                                        <div class="product-slider__top">
-                                            <div class="product-slider__name">2 Прием</div>
-                                            <div class="product-slider__info">180 г</div>
-                                            <div class="product-slider__info">296 кКал</div>
-                                        </div>
-                                        <div class="product-slider__pict">
-                                            <img class="product-slider__img" src="./local/img/product.jpg" alt="">
-                                        </div>
-                                        <div class="product-slider__text">
-                                            Фриттата с творогом, брокколи, моцареллой
-                                        </div>
-                                    </a>
-                                    <a href="javascript:;" class="product-slider__item swiper-slide">
-                                        <div class="product-slider__top">
-                                            <div class="product-slider__name">3 Прием</div>
-                                            <div class="product-slider__info">180 г</div>
-                                            <div class="product-slider__info">296 кКал</div>
-                                        </div>
-                                        <div class="product-slider__pict">
-                                            <img class="product-slider__img" src="./local/img/product.jpg" alt="">
-                                        </div>
-                                        <div class="product-slider__text">
-                                            Фриттата с творогом, брокколи, моцареллой
-                                        </div>
-                                    </a>
-                                    <a href="javascript:;" class="product-slider__item swiper-slide">
-                                        <div class="product-slider__top">
-                                            <div class="product-slider__name">4 Прием</div>
-                                            <div class="product-slider__info">180 г</div>
-                                            <div class="product-slider__info">296 кКал</div>
-                                        </div>
-                                        <div class="product-slider__pict">
-                                            <img class="product-slider__img" src="./local/img/product.jpg" alt="">
-                                        </div>
-                                        <div class="product-slider__text">
-                                            Фриттата с творогом, брокколи, моцареллой
-                                        </div>
-                                    </a>
-                                    <a href="javascript:;" class="product-slider__item swiper-slide">
-                                        <div class="product-slider__top">
-                                            <div class="product-slider__name">5 Прием</div>
-                                            <div class="product-slider__info">180 г</div>
-                                            <div class="product-slider__info">296 кКал</div>
-                                        </div>
-                                        <div class="product-slider__pict">
-                                            <img class="product-slider__img" src="./local/img/product.jpg" alt="">
-                                        </div>
-                                        <div class="product-slider__text">
-                                            Фриттата с творогом, брокколи, моцареллой
-                                        </div>
-                                    </a>
-                                </div>
-                                <a href="javascript:;" class="product-slider__next"></a>
-                            </div>
-
-                            <div class="free-delivery">
-                                <div class="free-delivery__title">
-                                    <div class="title-leaf">
-                                        <svg class="title-leaf__icon title-leaf__icon_v1">
-                                            <use xlink:href="./local/img/sprite.svg#leaf"></use>
-                                        </svg>
-                                        <h2 class="mb-0 text-left">Бесплатная доставка</h2>
-                                    </div>
-                                </div>
-                                <svg class="free-delivery__icon">
-                                    <use xlink:href="./local/img/sprite.svg#free-delivery"></use>
-                                </svg>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="quick-order">
-                <div class="container">
-                    <div class="title-leaf title-leaf_ml">
-                        <svg class="title-leaf__icon title-leaf__icon_v3">
-                            <use xlink:href="./local/img/sprite.svg#leaf"></use>
-                        </svg>
-                        <h2 class="mb-0 color-purple">Быстрый заказ</h2>
-                    </div>
-                    <div class="quick-order__parts">
-                        <div class="quick-order__left">
-
-                            <div class="form-one">
-                                <div class="quick-order-check">
-                                    <div class="quick-order-check__item">
-                                        <div class="form-one__label form-one__label_grey form-one__label_big-margin">
-                                            Выберите тип<br>
-                                            диеты
-                                        </div>
-                                        <label class="radio-one">
-                                            <input type="radio" class="radio-one__input" name="check1" checked>
-                                            <div class="radio-one__point"></div>
-                                            <div class="radio-one__label">
-                                                Щадящая
-                                            </div>
-                                        </label>
-                                        <label class="radio-one">
-                                            <input type="radio" class="radio-one__input" name="check1">
-                                            <div class="radio-one__point"></div>
-                                            <div class="radio-one__label">
-                                                Диабет 2 типа
-                                            </div>
-                                        </label>
-                                    </div>
-                                    <div class="quick-order-check__item">
-                                        <div class="form-one__label form-one__label_grey form-one__label_big-margin">
-                                            Выберите<br>
-                                            количество калорий
-                                        </div>
-                                        <label class="radio-one">
-                                            <input type="radio" class="radio-one__input" name="check2" checked>
-                                            <div class="radio-one__point"></div>
-                                            <div class="radio-one__label">
-                                                Слим <b>1200 ккал</b>
-                                            </div>
-                                        </label>
-                                        <label class="radio-one">
-                                            <input type="radio" class="radio-one__input" name="check2">
-                                            <div class="radio-one__point"></div>
-                                            <div class="radio-one__label">
-                                                Лайт <b>1600 ккал</b>
-                                            </div>
-                                        </label>
-                                        <label class="radio-one">
-                                            <input type="radio" class="radio-one__input" name="check2">
-                                            <div class="radio-one__point"></div>
-                                            <div class="radio-one__label">
-                                                Стандарт <b>2000 ккал</b>
-                                            </div>
-                                        </label>
-                                    </div>
-                                    <div class="quick-order-check__item">
-                                        <div class="form-one__label form-one__label_grey form-one__label_big-margin">
-                                            Количество дней
-                                        </div>
-                                        <div class="two-parts">
-                                            <div class="two-parts__item">
-                                                <label class="radio-one">
-                                                    <input type="radio" class="radio-one__input" name="check3" checked>
-                                                    <div class="radio-one__point"></div>
-                                                    <div class="radio-one__label">
-                                                        2
-                                                    </div>
-                                                </label>
-                                                <label class="radio-one">
-                                                    <input type="radio" class="radio-one__input" name="check3">
-                                                    <div class="radio-one__point"></div>
-                                                    <div class="radio-one__label">
-                                                        3
-                                                    </div>
-                                                </label>
-                                                <label class="radio-one">
-                                                    <input type="radio" class="radio-one__input" name="check3">
-                                                    <div class="radio-one__point"></div>
-                                                    <div class="radio-one__label">
-                                                        6
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <div class="two-parts__item">
-                                                <label class="radio-one">
-                                                    <input type="radio" class="radio-one__input" name="check3" checked>
-                                                    <div class="radio-one__point"></div>
-                                                    <div class="radio-one__label">
-                                                        12
-                                                    </div>
-                                                </label>
-                                                <label class="radio-one">
-                                                    <input type="radio" class="radio-one__input" name="check3">
-                                                    <div class="radio-one__point"></div>
-                                                    <div class="radio-one__label">
-                                                        20
-                                                    </div>
-                                                </label>
-                                                <label class="radio-one">
-                                                    <input type="radio" class="radio-one__input" name="check3">
-                                                    <div class="radio-one__point"></div>
-                                                    <div class="radio-one__label">
-                                                        28
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="quick-order-check__item">
-                                        <div class="form-one__label form-one__label_grey form-one__label_big-margin">
-                                            Тип меню
-                                        </div>
-                                        <label class="radio-one">
-                                            <input type="radio" class="radio-one__input" name="check4" checked>
-                                            <div class="radio-one__point"></div>
-                                            <div class="radio-one__label">
-                                                Базовое
-                                            </div>
-                                        </label>
-                                        <label class="radio-one">
-                                            <input type="radio" class="radio-one__input" name="check4">
-                                            <div class="radio-one__point"></div>
-                                            <div class="radio-one__label">
-                                                Рыбное
-                                            </div>
-                                        </label>
-                                        <label class="radio-one">
-                                            <input type="radio" class="radio-one__input" name="check4">
-                                            <div class="radio-one__point"></div>
-                                            <div class="radio-one__label">
-                                                Безлактозное
-                                            </div>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="quick-order__check">
-                                    <label class="checkbox-one">
-                                        <input type="checkbox" class="checkbox-one__input" name="">
-                                        <div class="checkbox-one__point"></div>
-                                        <div class="checkbox-one__label">
-                                            Без завтраков <b class="color-purple">1087 руб./день</b>
-                                        </div>
-                                    </label>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="quick-order__right">
-
-                            <div class="quick-order-result">
-                                <div class="quick-order-result__items">
-                                    <div class="quick-order-result__item">
-                                        <div class="quick-order-result__title">Итог:</div>
-                                        <div>
-                                            по 6 приемов<br>
-                                            на 4 дня
-                                        </div>
-                                    </div>
-                                    <div class="quick-order-result__item">
-                                        <div class="quick-order-result__title">Выгода:</div>
-                                        <div class="quick-order-result__line-through">
-                                            352 руб.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="quick-order-result__price">4 750 руб.</div>
-                                <div class="quick-order-result__btn">
-                                    <a href="javascript:;" class="btn btn-purple">ЗАКАЗАТЬ</a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="review-list">
-                <div class="container">
-                    <div class="title-leaf">
-                        <svg class="title-leaf__icon">
-                            <use xlink:href="./local/img/sprite.svg#leaf"></use>
-                        </svg>
-                        <h2 class="text-center mb-0 color-purple">Отзывы</h2>
-                    </div>
-                    <div class="review-list__items">
-                        <div class="review-list__item">
-                            <div class="review-list__top">
-                                <div class="review-list__pict">
-                                    <img class="review-list__img" src="./local/uploads/review.ava.png" alt="">
-                                </div>
-                                <div class="review-list__right">
-                                    <div class="review-list__info">
-                                        <div>
-                                            <div class="review-list__name">Мистер Л.</div>
-                                            <div class="star-block">
-                                                <span class="star-block__point star-block__point_active">
-                                                    <svg class="star-block__icon">
-                                                        <use xlink:href="./local/img/sprite.svg#star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="star-block__point star-block__point_active">
-                                                    <svg class="star-block__icon">
-                                                        <use xlink:href="./local/img/sprite.svg#star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="star-block__point star-block__point_active">
-                                                    <svg class="star-block__icon">
-                                                        <use xlink:href="./local/img/sprite.svg#star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="star-block__point">
-                                                    <svg class="star-block__icon">
-                                                        <use xlink:href="./local/img/sprite.svg#star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="star-block__point">
-                                                    <svg class="star-block__icon">
-                                                        <use xlink:href="./local/img/sprite.svg#star"></use>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="review-list__date">15.12.12</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="review-list__middle">
-                                <div class="review-list__title">Great food and delivery!</div>
-                                <div class="review-list__text">
-                                    I love the meals. They taste very good (some great!) and match with my diet plans. I've lost a bunch of weight already and feel great (as usual when I actually stick to Whole30, and this makes it easy!) I appreciate the recyclable packaging also, but what am I supposed to do with three massive cooling gel packs every week that I'm not supposed to ...
-                                    <a href="javascript:;" class="review-list__more">Далее</a>
-                                </div>
-                            </div>
-                            <div class="review-list__bottom">
-                                <div class="like-block">
-                                    <a href="javascript:;" class="like-block__link like-block__link_active">
-                                        <svg class="like-block__icon like-block__icon_like">
-                                            <use xlink:href="./local/img/sprite.svg#like"></use>
-                                        </svg>
-                                        <span class="like-block__count">1</span>
-                                    </a>
-                                    <a href="javascript:;" class="like-block__link">
-                                        <svg class="like-block__icon like-block__icon_dislike">
-                                            <use xlink:href="./local/img/sprite.svg#dislike"></use>
-                                        </svg>
-                                        <span class="like-block__count">0</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="review-list__item">
-                            <div class="review-list__top">
-                                <div class="review-list__pict">
-                                    <img class="review-list__img" src="./local/uploads/review.ava.png" alt="">
-                                </div>
-                                <div class="review-list__right">
-                                    <div class="review-list__info">
-                                        <div>
-                                            <div class="review-list__name">Мистер Л.</div>
-                                            <div class="star-block">
-                                                <span class="star-block__point star-block__point_active">
-                                                    <svg class="star-block__icon">
-                                                        <use xlink:href="./local/img/sprite.svg#star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="star-block__point star-block__point_active">
-                                                    <svg class="star-block__icon">
-                                                        <use xlink:href="./local/img/sprite.svg#star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="star-block__point star-block__point_active">
-                                                    <svg class="star-block__icon">
-                                                        <use xlink:href="./local/img/sprite.svg#star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="star-block__point">
-                                                    <svg class="star-block__icon">
-                                                        <use xlink:href="./local/img/sprite.svg#star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="star-block__point">
-                                                    <svg class="star-block__icon">
-                                                        <use xlink:href="./local/img/sprite.svg#star"></use>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="review-list__date">15.12.12</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="review-list__middle">
-                                <div class="review-list__title">Great food and delivery!</div>
-                                <div class="review-list__text">
-                                    I love the meals. They taste very good (some great!) and match with my diet plans. I've lost a bunch of weight already and feel great (as usual when I actually stick to Whole30, and this makes it easy!) I appreciate the recyclable packaging also, but what am I supposed to do with three massive cooling gel packs every week that I'm not supposed to ...
-                                    <a href="javascript:;" class="review-list__more">Далее</a>
-                                </div>
-                            </div>
-                            <div class="review-list__bottom">
-                                <div class="like-block">
-                                    <a href="javascript:;" class="like-block__link">
-                                        <svg class="like-block__icon like-block__icon_like">
-                                            <use xlink:href="./local/img/sprite.svg#like"></use>
-                                        </svg>
-                                        <span class="like-block__count">0</span>
-                                    </a>
-                                    <a href="javascript:;" class="like-block__link">
-                                        <svg class="like-block__icon like-block__icon_dislike">
-                                            <use xlink:href="./local/img/sprite.svg#dislike"></use>
-                                        </svg>
-                                        <span class="like-block__count">0</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="review-list__item">
-                            <div class="review-list__top">
-                                <div class="review-list__pict">
-                                    <img class="review-list__img" src="./local/uploads/review.ava.png" alt="">
-                                </div>
-                                <div class="review-list__right">
-                                    <div class="review-list__info">
-                                        <div>
-                                            <div class="review-list__name">Мистер Л.</div>
-                                            <div class="star-block">
-                                                <span class="star-block__point star-block__point_active">
-                                                    <svg class="star-block__icon">
-                                                        <use xlink:href="./local/img/sprite.svg#star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="star-block__point star-block__point_active">
-                                                    <svg class="star-block__icon">
-                                                        <use xlink:href="./local/img/sprite.svg#star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="star-block__point star-block__point_active">
-                                                    <svg class="star-block__icon">
-                                                        <use xlink:href="./local/img/sprite.svg#star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="star-block__point">
-                                                    <svg class="star-block__icon">
-                                                        <use xlink:href="./local/img/sprite.svg#star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="star-block__point">
-                                                    <svg class="star-block__icon">
-                                                        <use xlink:href="./local/img/sprite.svg#star"></use>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="review-list__date">15.12.12</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="review-list__middle">
-                                <div class="review-list__title">Great food and delivery!</div>
-                                <div class="review-list__text">
-                                    I love the meals. They taste very good (some great!) and match with my diet plans. I've lost a bunch of weight already and feel great (as usual when I actually stick to Whole30, and this makes it easy!) I appreciate the recyclable packaging also, but what am I supposed to do with three massive cooling gel packs every week that I'm not supposed to ...
-                                    <a href="javascript:;" class="review-list__more">Далее</a>
-                                </div>
-                            </div>
-                            <div class="review-list__bottom">
-                                <div class="like-block">
-                                    <a href="javascript:;" class="like-block__link">
-                                        <svg class="like-block__icon like-block__icon_like">
-                                            <use xlink:href="./local/img/sprite.svg#like"></use>
-                                        </svg>
-                                        <span class="like-block__count">0</span>
-                                    </a>
-                                    <a href="javascript:;" class="like-block__link">
-                                        <svg class="like-block__icon like-block__icon_dislike">
-                                            <use xlink:href="./local/img/sprite.svg#dislike"></use>
-                                        </svg>
-                                        <span class="like-block__count">0</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="review-list__item">
-                            <div class="review-list__top">
-                                <div class="review-list__pict">
-                                    <img class="review-list__img" src="./local/uploads/review.ava.png" alt="">
-                                </div>
-                                <div class="review-list__right">
-                                    <div class="review-list__info">
-                                        <div>
-                                            <div class="review-list__name">Мистер Л.</div>
-                                            <div class="star-block">
-                                                <span class="star-block__point star-block__point_active">
-                                                    <svg class="star-block__icon">
-                                                        <use xlink:href="./local/img/sprite.svg#star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="star-block__point star-block__point_active">
-                                                    <svg class="star-block__icon">
-                                                        <use xlink:href="./local/img/sprite.svg#star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="star-block__point star-block__point_active">
-                                                    <svg class="star-block__icon">
-                                                        <use xlink:href="./local/img/sprite.svg#star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="star-block__point">
-                                                    <svg class="star-block__icon">
-                                                        <use xlink:href="./local/img/sprite.svg#star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="star-block__point">
-                                                    <svg class="star-block__icon">
-                                                        <use xlink:href="./local/img/sprite.svg#star"></use>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="review-list__date">15.12.12</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="review-list__middle">
-                                <div class="review-list__title">Great food and delivery!</div>
-                                <div class="review-list__text">
-                                    I love the meals. They taste very good (some great!) and match with my diet plans. I've lost a bunch of weight already and feel great (as usual when I actually stick to Whole30, and this makes it easy!) I appreciate the recyclable packaging also, but what am I supposed to do with three massive cooling gel packs every week that I'm not supposed to ...
-                                    <a href="javascript:;" class="review-list__more">Далее</a>
-                                </div>
-                            </div>
-                            <div class="review-list__bottom">
-                                <div class="like-block">
-                                    <a href="javascript:;" class="like-block__link">
-                                        <svg class="like-block__icon like-block__icon_like">
-                                            <use xlink:href="./local/img/sprite.svg#like"></use>
-                                        </svg>
-                                        <span class="like-block__count">0</span>
-                                    </a>
-                                    <a href="javascript:;" class="like-block__link">
-                                        <svg class="like-block__icon like-block__icon_dislike">
-                                            <use xlink:href="./local/img/sprite.svg#dislike"></use>
-                                        </svg>
-                                        <span class="like-block__count">0</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="review-list__panel">
-                        <div class="review-list__btn">
-                            <a href="javascript:;" class="btn btn-white btn-padding-sm">оставить отзыв</a>
-                        </div>
-                        <div class="page-nav">
-                            <a href="javascript:;" class="page-nav__link">&lt;</a>
-                            <a href="javascript:;" class="page-nav__link">1</a>
-                            <a href="javascript:;" class="page-nav__link">2</a>
-                            <span class="page-nav__current">3</span>
-                            <a href="javascript:;" class="page-nav__link">&hellip;</a>
-                            <a href="javascript:;" class="page-nav__link">7</a>
-                            <a href="javascript:;" class="page-nav__link">&gt;</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Start footer.php -->
-        </main>
-        <footer class="main-footer">
-            <div class="container">
-                <div class="main-footer__inner">
-                    <a href="/" class="main-footer__logo">
-                        <img src="./local/img/logo.svg" alt="">
-                    </a>
-                    <div class="main-footer__menu">
-                        <nav class="menu-bottom">
-                            <a href="javascript:;" class="menu-bottom__link">как это работает</a>
-                            <a href="javascript:;" class="menu-bottom__link">меню и тарифы</a>
-                            <a href="javascript:;" class="menu-bottom__link">отзывы</a>
-                        </nav>
-                    </div>
-                    <div class="main-footer__social">
-                        <div class="social-block">
-                            <div class="social-block__title">Мы в социальных сетях</div>
-                            <div class="social-block__links">
-                                <a href="javascript::" class="social-block__link" target="_blank">
-                                    <svg class="social-block__icon social-block__icon_ig">
-                                        <use xlink:href="./local/img/sprite.svg#ig"></use>
-                                    </svg>
-                                </a>
-                                <a href="javascript::" class="social-block__link" target="_blank">
-                                    <svg class="social-block__icon social-block__icon_fb">
-                                        <use xlink:href="./local/img/sprite.svg#fb"></use>
-                                    </svg>
-                                </a>
-                                <a href="javascript::" class="social-block__link" target="_blank">
-                                    <svg class="social-block__icon social-block__icon_vk">
-                                        <use xlink:href="./local/img/sprite.svg#vk"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main-footer__info">
-                        <a href="tel:+78007776875" class="main-footer__link">8 (800) 777-68-75</a>
-                        <a href="mailto:hello@polza.diet" class="main-footer__link">hello@polza.diet</a>
-                    </div>
-                    <div class="main-footer__btn">
-                        <a href="javascript:;" class="btn btn-purple btn-full-width btn-md">Личный кабинет</a>
-                    </div>
-                </div>
-                <div class="main-footer__copy">
-                    © 2021 Польза — сервис доставки питания. Фотографии блюд на сайте являются вариантом сервировки блюда.<br>
-                    Внешний вид блюда может отличаться от фотографии на сайте. Указывая номер телефона на сайте,<br>
-                    Вы соглашаетесь с условиями Публичной оферты и Политикой конфедициальности
-                </div>
-            </div>
-        </footer>
+        </div>
     </div>
-</body>
-</html>
+    <img src="./local/img/index.slider.img.png" class="index-slider__img d-none d-md-block">
+    <img src="./local/img/index.slider.img.mobile.png" class="index-slider__img d-md-none">
+</div>
+
+<!-- Врач -->
+<div class="index-doctor">
+    <div class="container">
+        <div class="index-doctor__inner">
+            <div class="index-doctor__pict">
+                <img src="./local/img/index.doctor.png" alt="" class="index-doctor__img d-none d-md-block">
+                <img src="./local/img/index.doctor.mobile.png" alt="" class="index-doctor__img d-md-none">
+            </div>
+            <div class="index-doctor__info">
+                <div class="index-doctor__name">
+                    Александра Белодедова
+                </div>
+                <div class="index-doctor__dol">
+                    ВРАЧ-ДИЕТОЛОГ, ГАСТРОЭНТЕРОЛОГ
+                </div>
+                <div class="index-doctor__text">
+                    Медицинский консультант<br> 
+                    нашего проекта.<br>
+                    Помогла нам разработать<br> 
+                    щадящую диету, а так же диету,<br> 
+                    рекомендованную при Диабете 2 типа.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Как это работает -->
+<div class="index-work">
+    <div class="container">
+        <div class="title-leaf">
+            <svg class="title-leaf__icon title-leaf__icon_v1">
+                <use xlink:href="./local/img/sprite.svg#leaf"></use>
+            </svg>
+            <h2 class="text-center mb-0 color-purple">Как это работает?</h2>
+        </div>
+        <div class="index-work__items">
+            <div class="index-work__item">
+                <div class="index-work__pict">
+                    <img src="./local/img/index.work.1.svg" alt="" class="index-work__img">
+                </div>
+                <div class="index-work__text">
+                    Наш диетолог разработал меню, рекомендованное по медицинским показаниям
+                </div>
+            </div>
+            <div class="index-work__item">
+                <div class="index-work__pict">
+                    <img src="./local/img/index.work.2.svg" alt="" class="index-work__img">
+                </div>
+                <div class="index-work__text">
+                    Готовим исключительно из свежих и натуральных продуктов
+                </div>
+            </div>
+            <div class="index-work__item">
+                <div class="index-work__pict">
+                    <img src="./local/img/index.work.3.svg" alt="" class="index-work__img">
+                </div>
+                <div class="index-work__text">
+                    Бесплатно доставим ваш заказ в пределах города
+                </div>
+            </div>
+            <div class="index-work__item">
+                <div class="index-work__pict">
+                    <img src="./local/img/index.work.4.svg" alt="" class="index-work__img">
+                </div>
+                <div class="index-work__text">
+                    Вы питаетесь правильно, вкусно и разнообразно
+                </div>
+            </div>
+        </div>
+        <div class="index-work__btn">
+            <a href="javascript:;" class="btn btn-purple">Заказать</a>
+        </div>
+    </div>
+</div>
+
+<!-- Меню сегодня: Фильтр + Товары -->
+<div class="filter-product">
+    <div class="container">
+        <div class="title-leaf">
+            <svg class="title-leaf__icon title-leaf__icon_v2">
+                <use xlink:href="./local/img/sprite.svg#leaf"></use>
+            </svg>
+            <h2 class="mb-0 color-purple">Меню сегодня</h2>
+        </div>
+        <div class="filter-product__parts">
+            <div class="filter-product__left">
+
+                <!-- Фильтр так же расположен на странице catalog.html (код одинаковый) -->
+                <%= _.template(require('./../includes/filter-aside.html'))(data) %>
+
+                <!-- Блок "Пищевая ценность дня" так же расположен на странице catalog.html (код одинаковый исключая кнопку) -->
+                <div class="calc-block">
+                    <div class="calc-block__title">Пищевая ценность дня</div>
+                    <div class="calc-block__summ">1668 кКал</div>
+                    <div class="calc-block__lines">
+                        <div class="calc-block__line">
+                            Белки <span class="calc-block__count">97 гр.</span>
+                        </div>
+                        <div class="calc-block__line">
+                            Жиры <span class="calc-block__count">97 гр.</span>
+                        </div>
+                        <div class="calc-block__line">
+                            Углеводы <span class="calc-block__count">97 гр.</span>
+                        </div>
+                    </div>
+                    <div class="calc-block__btn">
+                        <a href="javascript:;" class="btn btn-purple btn-full-width">СМОТРЕТЬ МЕНЮ НЕДЕЛИ</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="filter-product__right">
+
+                <div class="product-list">
+                    <a href="javascript:;" class="product-list__item">
+                        <div class="product-list__top">
+                            <div class="product-list__name">1 Прием</div>
+                            <div class="product-list__info">180 г</div>
+                            <div class="product-list__info">296 кКал</div>
+                        </div>
+                        <div class="product-list__pict">
+                            <img class="product-list__img" src="./local/img/product.jpg" alt="">
+                        </div>
+                        <div class="product-list__text">
+                            Фриттата с творогом, брокколи, моцареллой
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="product-list__item">
+                        <div class="product-list__top">
+                            <div class="product-list__name">2 Прием</div>
+                            <div class="product-list__info">180 г</div>
+                            <div class="product-list__info">296 кКал</div>
+                        </div>
+                        <div class="product-list__pict">
+                            <img class="product-list__img" src="./local/img/product.jpg" alt="">
+                        </div>
+                        <div class="product-list__text">
+                            Фриттата с творогом, брокколи, моцареллой
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="product-list__item">
+                        <div class="product-list__top">
+                            <div class="product-list__name">3 Прием</div>
+                            <div class="product-list__info">180 г</div>
+                            <div class="product-list__info">296 кКал</div>
+                        </div>
+                        <div class="product-list__pict">
+                            <img class="product-list__img" src="./local/img/product.jpg" alt="">
+                        </div>
+                        <div class="product-list__text">
+                            Фриттата с творогом, брокколи, моцареллой
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="product-list__item">
+                        <div class="product-list__top">
+                            <div class="product-list__name">4 Прием</div>
+                            <div class="product-list__info">180 г</div>
+                            <div class="product-list__info">296 кКал</div>
+                        </div>
+                        <div class="product-list__pict">
+                            <img class="product-list__img" src="./local/img/product.jpg" alt="">
+                        </div>
+                        <div class="product-list__text">
+                            Фриттата с творогом, брокколи, моцареллой
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="product-list__item">
+                        <div class="product-list__top">
+                            <div class="product-list__name">5 Прием</div>
+                            <div class="product-list__info">180 г</div>
+                            <div class="product-list__info">296 кКал</div>
+                        </div>
+                        <div class="product-list__pict">
+                            <img class="product-list__img" src="./local/img/product.jpg" alt="">
+                        </div>
+                        <div class="product-list__text">
+                            Фриттата с творогом, брокколи, моцареллой
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="product-list__free">
+                        <div class="title-leaf">
+                            <svg class="title-leaf__icon title-leaf__icon_v1">
+                                <use xlink:href="./local/img/sprite.svg#leaf"></use>
+                            </svg>
+                            <h2 class="mb-0">Бесплатная доставка</h2>
+                        </div>
+                        <svg class="product-list__free-icon">
+                            <use xlink:href="./local/img/sprite.svg#free-delivery"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="product-slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <a href="javascript:;" class="product-slider__item swiper-slide">
+                            <div class="product-slider__top">
+                                <div class="product-slider__name">1 Прием</div>
+                                <div class="product-slider__info">180 г</div>
+                                <div class="product-slider__info">296 кКал</div>
+                            </div>
+                            <div class="product-slider__pict">
+                                <img class="product-slider__img" src="./local/img/product.jpg" alt="">
+                            </div>
+                            <div class="product-slider__text">
+                                Фриттата с творогом, брокколи, моцареллой
+                            </div>
+                        </a>
+                        <a href="javascript:;" class="product-slider__item swiper-slide">
+                            <div class="product-slider__top">
+                                <div class="product-slider__name">2 Прием</div>
+                                <div class="product-slider__info">180 г</div>
+                                <div class="product-slider__info">296 кКал</div>
+                            </div>
+                            <div class="product-slider__pict">
+                                <img class="product-slider__img" src="./local/img/product.jpg" alt="">
+                            </div>
+                            <div class="product-slider__text">
+                                Фриттата с творогом, брокколи, моцареллой
+                            </div>
+                        </a>
+                        <a href="javascript:;" class="product-slider__item swiper-slide">
+                            <div class="product-slider__top">
+                                <div class="product-slider__name">3 Прием</div>
+                                <div class="product-slider__info">180 г</div>
+                                <div class="product-slider__info">296 кКал</div>
+                            </div>
+                            <div class="product-slider__pict">
+                                <img class="product-slider__img" src="./local/img/product.jpg" alt="">
+                            </div>
+                            <div class="product-slider__text">
+                                Фриттата с творогом, брокколи, моцареллой
+                            </div>
+                        </a>
+                        <a href="javascript:;" class="product-slider__item swiper-slide">
+                            <div class="product-slider__top">
+                                <div class="product-slider__name">4 Прием</div>
+                                <div class="product-slider__info">180 г</div>
+                                <div class="product-slider__info">296 кКал</div>
+                            </div>
+                            <div class="product-slider__pict">
+                                <img class="product-slider__img" src="./local/img/product.jpg" alt="">
+                            </div>
+                            <div class="product-slider__text">
+                                Фриттата с творогом, брокколи, моцареллой
+                            </div>
+                        </a>
+                        <a href="javascript:;" class="product-slider__item swiper-slide">
+                            <div class="product-slider__top">
+                                <div class="product-slider__name">5 Прием</div>
+                                <div class="product-slider__info">180 г</div>
+                                <div class="product-slider__info">296 кКал</div>
+                            </div>
+                            <div class="product-slider__pict">
+                                <img class="product-slider__img" src="./local/img/product.jpg" alt="">
+                            </div>
+                            <div class="product-slider__text">
+                                Фриттата с творогом, брокколи, моцареллой
+                            </div>
+                        </a>
+                    </div>
+                    <a href="javascript:;" class="product-slider__next"></a>
+                </div>
+
+                <div class="free-delivery">
+                    <div class="free-delivery__title">
+                        <div class="title-leaf">
+                            <svg class="title-leaf__icon title-leaf__icon_v1">
+                                <use xlink:href="./local/img/sprite.svg#leaf"></use>
+                            </svg>
+                            <h2 class="mb-0 text-left">Бесплатная доставка</h2>
+                        </div>
+                    </div>
+                    <svg class="free-delivery__icon">
+                        <use xlink:href="./local/img/sprite.svg#free-delivery"></use>
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Быстрый заказ -->
+<div class="quick-order">
+    <div class="container">
+        <div class="title-leaf title-leaf_ml">
+            <svg class="title-leaf__icon title-leaf__icon_v3">
+                <use xlink:href="./local/img/sprite.svg#leaf"></use>
+            </svg>
+            <h2 class="mb-0 color-purple">Быстрый заказ</h2>
+        </div>
+        <div class="quick-order__parts">
+            <div class="quick-order__left">
+
+                <div class="form-one">
+                    <div class="quick-order-check">
+                        <div class="quick-order-check__item">
+                            <div class="form-one__label form-one__label_grey form-one__label_big-margin">
+                                Выберите тип<br>
+                                диеты
+                            </div>
+                            <label class="radio-one">
+                                <input type="radio" class="radio-one__input" name="check1" checked>
+                                <div class="radio-one__point"></div>
+                                <div class="radio-one__label">
+                                    Щадящая
+                                </div>
+                            </label>
+                            <label class="radio-one">
+                                <input type="radio" class="radio-one__input" name="check1">
+                                <div class="radio-one__point"></div>
+                                <div class="radio-one__label">
+                                    Диабет 2 типа
+                                </div>
+                            </label>
+                        </div>
+                        <div class="quick-order-check__item">
+                            <div class="form-one__label form-one__label_grey form-one__label_big-margin">
+                                Выберите<br>
+                                количество калорий
+                            </div>
+                            <label class="radio-one">
+                                <input type="radio" class="radio-one__input" name="check2" checked>
+                                <div class="radio-one__point"></div>
+                                <div class="radio-one__label">
+                                    Слим <b>1200 ккал</b>
+                                </div>
+                            </label>
+                            <label class="radio-one">
+                                <input type="radio" class="radio-one__input" name="check2">
+                                <div class="radio-one__point"></div>
+                                <div class="radio-one__label">
+                                    Лайт <b>1600 ккал</b>
+                                </div>
+                            </label>
+                            <label class="radio-one">
+                                <input type="radio" class="radio-one__input" name="check2">
+                                <div class="radio-one__point"></div>
+                                <div class="radio-one__label">
+                                    Стандарт <b>2000 ккал</b>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="quick-order-check__item">
+                            <div class="form-one__label form-one__label_grey form-one__label_big-margin">
+                                Количество дней
+                            </div>
+                            <div class="two-parts">
+                                <div class="two-parts__item">
+                                    <label class="radio-one">
+                                        <input type="radio" class="radio-one__input" name="check3" checked>
+                                        <div class="radio-one__point"></div>
+                                        <div class="radio-one__label">
+                                            2
+                                        </div>
+                                    </label>
+                                    <label class="radio-one">
+                                        <input type="radio" class="radio-one__input" name="check3">
+                                        <div class="radio-one__point"></div>
+                                        <div class="radio-one__label">
+                                            3
+                                        </div>
+                                    </label>
+                                    <label class="radio-one">
+                                        <input type="radio" class="radio-one__input" name="check3">
+                                        <div class="radio-one__point"></div>
+                                        <div class="radio-one__label">
+                                            6
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="two-parts__item">
+                                    <label class="radio-one">
+                                        <input type="radio" class="radio-one__input" name="check3" checked>
+                                        <div class="radio-one__point"></div>
+                                        <div class="radio-one__label">
+                                            12
+                                        </div>
+                                    </label>
+                                    <label class="radio-one">
+                                        <input type="radio" class="radio-one__input" name="check3">
+                                        <div class="radio-one__point"></div>
+                                        <div class="radio-one__label">
+                                            20
+                                        </div>
+                                    </label>
+                                    <label class="radio-one">
+                                        <input type="radio" class="radio-one__input" name="check3">
+                                        <div class="radio-one__point"></div>
+                                        <div class="radio-one__label">
+                                            28
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quick-order-check__item">
+                            <div class="form-one__label form-one__label_grey form-one__label_big-margin">
+                                Тип меню
+                            </div>
+                            <label class="radio-one">
+                                <input type="radio" class="radio-one__input" name="check4" checked>
+                                <div class="radio-one__point"></div>
+                                <div class="radio-one__label">
+                                    Базовое
+                                </div>
+                            </label>
+                            <label class="radio-one">
+                                <input type="radio" class="radio-one__input" name="check4">
+                                <div class="radio-one__point"></div>
+                                <div class="radio-one__label">
+                                    Рыбное
+                                </div>
+                            </label>
+                            <label class="radio-one">
+                                <input type="radio" class="radio-one__input" name="check4">
+                                <div class="radio-one__point"></div>
+                                <div class="radio-one__label">
+                                    Безлактозное
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="quick-order__check">
+                        <label class="checkbox-one">
+                            <input type="checkbox" class="checkbox-one__input" name="">
+                            <div class="checkbox-one__point"></div>
+                            <div class="checkbox-one__label">
+                                Без завтраков <b class="color-purple">1087 руб./день</b>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="quick-order__right">
+
+                <div class="quick-order-result">
+                    <div class="quick-order-result__items">
+                        <div class="quick-order-result__item">
+                            <div class="quick-order-result__title">Итог:</div>
+                            <div>
+                                по 6 приемов<br>
+                                на 4 дня
+                            </div>
+                        </div>
+                        <div class="quick-order-result__item">
+                            <div class="quick-order-result__title">Выгода:</div>
+                            <div class="quick-order-result__line-through">
+                                352 руб.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quick-order-result__price">4 750 руб.</div>
+                    <div class="quick-order-result__btn">
+                        <a href="javascript:;" class="btn btn-purple">ЗАКАЗАТЬ</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Отзывы -->
+<div class="review-list">
+    <div class="container">
+        <div class="title-leaf">
+            <svg class="title-leaf__icon">
+                <use xlink:href="./local/img/sprite.svg#leaf"></use>
+            </svg>
+            <h2 class="text-center mb-0 color-purple">Отзывы</h2>
+        </div>
+        <div class="review-list__items">
+            <div class="review-list__item">
+                <div class="review-list__top">
+                    <div class="review-list__pict">
+                        <img class="review-list__img" src="./local/uploads/review.ava.png" alt="">
+                    </div>
+                    <div class="review-list__right">
+                        <div class="review-list__info">
+                            <div>
+                                <div class="review-list__name">Мистер Л.</div>
+                                <div class="star-block">
+                                    <span class="star-block__point star-block__point_active">
+                                        <svg class="star-block__icon">
+                                            <use xlink:href="./local/img/sprite.svg#star"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="star-block__point star-block__point_active">
+                                        <svg class="star-block__icon">
+                                            <use xlink:href="./local/img/sprite.svg#star"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="star-block__point star-block__point_active">
+                                        <svg class="star-block__icon">
+                                            <use xlink:href="./local/img/sprite.svg#star"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="star-block__point">
+                                        <svg class="star-block__icon">
+                                            <use xlink:href="./local/img/sprite.svg#star"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="star-block__point">
+                                        <svg class="star-block__icon">
+                                            <use xlink:href="./local/img/sprite.svg#star"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="review-list__date">15.12.12</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-list__middle">
+                    <div class="review-list__title">Great food and delivery!</div>
+                    <div class="review-list__text">
+                        I love the meals. They taste very good (some great!) and match with my diet plans. I've lost a bunch of weight already and feel great (as usual when I actually stick to Whole30, and this makes it easy!) I appreciate the recyclable packaging also, but what am I supposed to do with three massive cooling gel packs every week that I'm not supposed to ...
+                        <a href="javascript:;" class="review-list__more">Далее</a>
+                    </div>
+                </div>
+                <div class="review-list__bottom">
+                    <div class="like-block">
+                        <a href="javascript:;" class="like-block__link like-block__link_active">
+                            <svg class="like-block__icon like-block__icon_like">
+                                <use xlink:href="./local/img/sprite.svg#like"></use>
+                            </svg>
+                            <span class="like-block__count">1</span>
+                        </a>
+                        <a href="javascript:;" class="like-block__link">
+                            <svg class="like-block__icon like-block__icon_dislike">
+                                <use xlink:href="./local/img/sprite.svg#dislike"></use>
+                            </svg>
+                            <span class="like-block__count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="review-list__item">
+                <div class="review-list__top">
+                    <div class="review-list__pict">
+                        <img class="review-list__img" src="./local/uploads/review.ava.png" alt="">
+                    </div>
+                    <div class="review-list__right">
+                        <div class="review-list__info">
+                            <div>
+                                <div class="review-list__name">Мистер Л.</div>
+                                <div class="star-block">
+                                    <span class="star-block__point star-block__point_active">
+                                        <svg class="star-block__icon">
+                                            <use xlink:href="./local/img/sprite.svg#star"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="star-block__point star-block__point_active">
+                                        <svg class="star-block__icon">
+                                            <use xlink:href="./local/img/sprite.svg#star"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="star-block__point star-block__point_active">
+                                        <svg class="star-block__icon">
+                                            <use xlink:href="./local/img/sprite.svg#star"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="star-block__point">
+                                        <svg class="star-block__icon">
+                                            <use xlink:href="./local/img/sprite.svg#star"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="star-block__point">
+                                        <svg class="star-block__icon">
+                                            <use xlink:href="./local/img/sprite.svg#star"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="review-list__date">15.12.12</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-list__middle">
+                    <div class="review-list__title">Great food and delivery!</div>
+                    <div class="review-list__text">
+                        I love the meals. They taste very good (some great!) and match with my diet plans. I've lost a bunch of weight already and feel great (as usual when I actually stick to Whole30, and this makes it easy!) I appreciate the recyclable packaging also, but what am I supposed to do with three massive cooling gel packs every week that I'm not supposed to ...
+                        <a href="javascript:;" class="review-list__more">Далее</a>
+                    </div>
+                </div>
+                <div class="review-list__bottom">
+                    <div class="like-block">
+                        <a href="javascript:;" class="like-block__link">
+                            <svg class="like-block__icon like-block__icon_like">
+                                <use xlink:href="./local/img/sprite.svg#like"></use>
+                            </svg>
+                            <span class="like-block__count">0</span>
+                        </a>
+                        <a href="javascript:;" class="like-block__link">
+                            <svg class="like-block__icon like-block__icon_dislike">
+                                <use xlink:href="./local/img/sprite.svg#dislike"></use>
+                            </svg>
+                            <span class="like-block__count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="review-list__item">
+                <div class="review-list__top">
+                    <div class="review-list__pict">
+                        <img class="review-list__img" src="./local/uploads/review.ava.png" alt="">
+                    </div>
+                    <div class="review-list__right">
+                        <div class="review-list__info">
+                            <div>
+                                <div class="review-list__name">Мистер Л.</div>
+                                <div class="star-block">
+                                    <span class="star-block__point star-block__point_active">
+                                        <svg class="star-block__icon">
+                                            <use xlink:href="./local/img/sprite.svg#star"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="star-block__point star-block__point_active">
+                                        <svg class="star-block__icon">
+                                            <use xlink:href="./local/img/sprite.svg#star"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="star-block__point star-block__point_active">
+                                        <svg class="star-block__icon">
+                                            <use xlink:href="./local/img/sprite.svg#star"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="star-block__point">
+                                        <svg class="star-block__icon">
+                                            <use xlink:href="./local/img/sprite.svg#star"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="star-block__point">
+                                        <svg class="star-block__icon">
+                                            <use xlink:href="./local/img/sprite.svg#star"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="review-list__date">15.12.12</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-list__middle">
+                    <div class="review-list__title">Great food and delivery!</div>
+                    <div class="review-list__text">
+                        I love the meals. They taste very good (some great!) and match with my diet plans. I've lost a bunch of weight already and feel great (as usual when I actually stick to Whole30, and this makes it easy!) I appreciate the recyclable packaging also, but what am I supposed to do with three massive cooling gel packs every week that I'm not supposed to ...
+                        <a href="javascript:;" class="review-list__more">Далее</a>
+                    </div>
+                </div>
+                <div class="review-list__bottom">
+                    <div class="like-block">
+                        <a href="javascript:;" class="like-block__link">
+                            <svg class="like-block__icon like-block__icon_like">
+                                <use xlink:href="./local/img/sprite.svg#like"></use>
+                            </svg>
+                            <span class="like-block__count">0</span>
+                        </a>
+                        <a href="javascript:;" class="like-block__link">
+                            <svg class="like-block__icon like-block__icon_dislike">
+                                <use xlink:href="./local/img/sprite.svg#dislike"></use>
+                            </svg>
+                            <span class="like-block__count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="review-list__item">
+                <div class="review-list__top">
+                    <div class="review-list__pict">
+                        <img class="review-list__img" src="./local/uploads/review.ava.png" alt="">
+                    </div>
+                    <div class="review-list__right">
+                        <div class="review-list__info">
+                            <div>
+                                <div class="review-list__name">Мистер Л.</div>
+                                <div class="star-block">
+                                    <span class="star-block__point star-block__point_active">
+                                        <svg class="star-block__icon">
+                                            <use xlink:href="./local/img/sprite.svg#star"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="star-block__point star-block__point_active">
+                                        <svg class="star-block__icon">
+                                            <use xlink:href="./local/img/sprite.svg#star"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="star-block__point star-block__point_active">
+                                        <svg class="star-block__icon">
+                                            <use xlink:href="./local/img/sprite.svg#star"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="star-block__point">
+                                        <svg class="star-block__icon">
+                                            <use xlink:href="./local/img/sprite.svg#star"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="star-block__point">
+                                        <svg class="star-block__icon">
+                                            <use xlink:href="./local/img/sprite.svg#star"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="review-list__date">15.12.12</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-list__middle">
+                    <div class="review-list__title">Great food and delivery!</div>
+                    <div class="review-list__text">
+                        I love the meals. They taste very good (some great!) and match with my diet plans. I've lost a bunch of weight already and feel great (as usual when I actually stick to Whole30, and this makes it easy!) I appreciate the recyclable packaging also, but what am I supposed to do with three massive cooling gel packs every week that I'm not supposed to ...
+                        <a href="javascript:;" class="review-list__more">Далее</a>
+                    </div>
+                </div>
+                <div class="review-list__bottom">
+                    <div class="like-block">
+                        <a href="javascript:;" class="like-block__link">
+                            <svg class="like-block__icon like-block__icon_like">
+                                <use xlink:href="./local/img/sprite.svg#like"></use>
+                            </svg>
+                            <span class="like-block__count">0</span>
+                        </a>
+                        <a href="javascript:;" class="like-block__link">
+                            <svg class="like-block__icon like-block__icon_dislike">
+                                <use xlink:href="./local/img/sprite.svg#dislike"></use>
+                            </svg>
+                            <span class="like-block__count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="review-list__panel">
+            <div class="review-list__btn">
+                <a href="javascript:;" class="btn btn-white btn-padding-sm">оставить отзыв</a>
+            </div>
+            <div class="page-nav">
+                <a href="javascript:;" class="page-nav__link">&lt;</a>
+                <a href="javascript:;" class="page-nav__link">1</a>
+                <a href="javascript:;" class="page-nav__link">2</a>
+                <span class="page-nav__current">3</span>
+                <a href="javascript:;" class="page-nav__link">&hellip;</a>
+                <a href="javascript:;" class="page-nav__link">7</a>
+                <a href="javascript:;" class="page-nav__link">&gt;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

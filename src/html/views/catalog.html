@@ -1,0 +1,334 @@
+<% var data = {
+    title: "Главная"
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<!-- Заголовок страницы -->
+<div class="page-head">
+    <div class="container">
+        <div class="title-leaf">
+            <svg class="title-leaf__icon title-leaf__icon_v1">
+                <use xlink:href="./local/img/sprite.svg#leaf"></use>
+            </svg>
+            <h1 class="text-center mb-0 color-purple">Меню недели</h1>
+        </div>
+    </div>
+</div>
+
+<!-- Только на мобильнике: Фильтр -->
+<div class="filter-aside-head">
+
+    <!-- Фильтр так же расположен на странице index.html (код одинаковый) -->
+    <%= _.template(require('./../includes/filter-aside.html'))(data) %>
+
+</div>
+
+<!-- Дни недели -->
+<div class="days-tab">
+    <div class="container">
+        <div class="days-tab__inner">
+            <a href="javascript:;" class="days-tab__link days-tab__link_active">Понедельник</a>
+            <a href="javascript:;" class="days-tab__link">Вторник</a>
+            <a href="javascript:;" class="days-tab__link">Среда</a>
+            <a href="javascript:;" class="days-tab__link">Четверг</a>
+            <a href="javascript:;" class="days-tab__link">Пятница</a>
+            <a href="javascript:;" class="days-tab__link">Суббота</a>
+            <a href="javascript:;" class="days-tab__link">Воскресенье</a>
+        </div>
+    </div>
+</div>
+
+<!-- Меню сегодня: Фильтр + Товары -->
+<div class="filter-product filter-product_inner">
+    <div class="container">
+        <div class="filter-product__parts">
+            <div class="filter-product__left">
+
+                <div class="d-none d-md-block">
+
+                    <!-- Фильтр так же расположен на странице index.html (код одинаковый) -->
+                    <%= _.template(require('./../includes/filter-aside.html'))(data) %>
+
+                </div>
+
+            </div>
+            <div class="filter-product__right">
+
+                <div class="product-list">
+                    <div class="product-list__day">
+                        <div class="product-list__day-title">Понедельник</div>
+                        <div class="product-list__day-block">
+
+                            <!-- Блок "Пищевая ценность дня" так же расположен на странице index.html (код одинаковый исключая кнопку) -->
+                            <div class="calc-block">
+                                <div class="calc-block__title">Пищевая ценность дня</div>
+                                <div class="calc-block__summ">1668 кКал</div>
+                                <div class="calc-block__lines">
+                                    <div class="calc-block__line">
+                                        Белки <span class="calc-block__count">97 гр.</span>
+                                    </div>
+                                    <div class="calc-block__line">
+                                        Жиры <span class="calc-block__count">97 гр.</span>
+                                    </div>
+                                    <div class="calc-block__line">
+                                        Углеводы <span class="calc-block__count">97 гр.</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="product-list__item">
+                        <div class="product-list__top">
+                            <div class="product-list__name">1 Прием</div>
+                            <div class="product-list__info">180 г</div>
+                            <div class="product-list__info">296 кКал</div>
+                        </div>
+                        <div class="product-list__pict">
+                            <img class="product-list__img" src="./local/img/product.jpg" alt="">
+                        </div>
+                        <div class="product-list__text">
+                            Фриттата с творогом, брокколи, моцареллой
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="product-list__item">
+                        <div class="product-list__top">
+                            <div class="product-list__name">2 Прием</div>
+                            <div class="product-list__info">180 г</div>
+                            <div class="product-list__info">296 кКал</div>
+                        </div>
+                        <div class="product-list__pict">
+                            <img class="product-list__img" src="./local/img/product.jpg" alt="">
+                        </div>
+                        <div class="product-list__text">
+                            Фриттата с творогом, брокколи, моцареллой
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="product-list__item">
+                        <div class="product-list__top">
+                            <div class="product-list__name">3 Прием</div>
+                            <div class="product-list__info">180 г</div>
+                            <div class="product-list__info">296 кКал</div>
+                        </div>
+                        <div class="product-list__pict">
+                            <img class="product-list__img" src="./local/img/product.jpg" alt="">
+                        </div>
+                        <div class="product-list__text">
+                            Фриттата с творогом, брокколи, моцареллой
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="product-list__item">
+                        <div class="product-list__top">
+                            <div class="product-list__name">4 Прием</div>
+                            <div class="product-list__info">180 г</div>
+                            <div class="product-list__info">296 кКал</div>
+                        </div>
+                        <div class="product-list__pict">
+                            <img class="product-list__img" src="./local/img/product.jpg" alt="">
+                        </div>
+                        <div class="product-list__text">
+                            Фриттата с творогом, брокколи, моцареллой
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="product-list__item">
+                        <div class="product-list__top">
+                            <div class="product-list__name">5 Прием</div>
+                            <div class="product-list__info">180 г</div>
+                            <div class="product-list__info">296 кКал</div>
+                        </div>
+                        <div class="product-list__pict">
+                            <img class="product-list__img" src="./local/img/product.jpg" alt="">
+                        </div>
+                        <div class="product-list__text">
+                            Фриттата с творогом, брокколи, моцареллой
+                        </div>
+                    </a>
+                    <div class="product-list__day">
+                        <div class="product-list__day-title">Вторник</div>
+                        <div class="product-list__day-block">
+
+                            <!-- Блок "Пищевая ценность дня" так же расположен на странице index.html (код одинаковый исключая кнопку) -->
+                            <div class="calc-block">
+                                <div class="calc-block__title">Пищевая ценность дня</div>
+                                <div class="calc-block__summ">1668 кКал</div>
+                                <div class="calc-block__lines">
+                                    <div class="calc-block__line">
+                                        Белки <span class="calc-block__count">97 гр.</span>
+                                    </div>
+                                    <div class="calc-block__line">
+                                        Жиры <span class="calc-block__count">97 гр.</span>
+                                    </div>
+                                    <div class="calc-block__line">
+                                        Углеводы <span class="calc-block__count">97 гр.</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="product-list__item">
+                        <div class="product-list__top">
+                            <div class="product-list__name">1 Прием</div>
+                            <div class="product-list__info">180 г</div>
+                            <div class="product-list__info">296 кКал</div>
+                        </div>
+                        <div class="product-list__pict">
+                            <img class="product-list__img" src="./local/img/product.jpg" alt="">
+                        </div>
+                        <div class="product-list__text">
+                            Фриттата с творогом, брокколи, моцареллой
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="product-list__item">
+                        <div class="product-list__top">
+                            <div class="product-list__name">2 Прием</div>
+                            <div class="product-list__info">180 г</div>
+                            <div class="product-list__info">296 кКал</div>
+                        </div>
+                        <div class="product-list__pict">
+                            <img class="product-list__img" src="./local/img/product.jpg" alt="">
+                        </div>
+                        <div class="product-list__text">
+                            Фриттата с творогом, брокколи, моцареллой
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="product-list__item">
+                        <div class="product-list__top">
+                            <div class="product-list__name">3 Прием</div>
+                            <div class="product-list__info">180 г</div>
+                            <div class="product-list__info">296 кКал</div>
+                        </div>
+                        <div class="product-list__pict">
+                            <img class="product-list__img" src="./local/img/product.jpg" alt="">
+                        </div>
+                        <div class="product-list__text">
+                            Фриттата с творогом, брокколи, моцареллой
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="product-list__item">
+                        <div class="product-list__top">
+                            <div class="product-list__name">4 Прием</div>
+                            <div class="product-list__info">180 г</div>
+                            <div class="product-list__info">296 кКал</div>
+                        </div>
+                        <div class="product-list__pict">
+                            <img class="product-list__img" src="./local/img/product.jpg" alt="">
+                        </div>
+                        <div class="product-list__text">
+                            Фриттата с творогом, брокколи, моцареллой
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="product-list__item">
+                        <div class="product-list__top">
+                            <div class="product-list__name">5 Прием</div>
+                            <div class="product-list__info">180 г</div>
+                            <div class="product-list__info">296 кКал</div>
+                        </div>
+                        <div class="product-list__pict">
+                            <img class="product-list__img" src="./local/img/product.jpg" alt="">
+                        </div>
+                        <div class="product-list__text">
+                            Фриттата с творогом, брокколи, моцареллой
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mb-45 d-md-none">
+
+                    <!-- Блок "Пищевая ценность дня" так же расположен на странице index.html (код одинаковый исключая кнопку) -->
+                    <div class="calc-block">
+                        <div class="calc-block__title">Пищевая ценность дня</div>
+                        <div class="calc-block__summ">1668 кКал</div>
+                        <div class="calc-block__lines">
+                            <div class="calc-block__line">
+                                Белки <span class="calc-block__count">97 гр.</span>
+                            </div>
+                            <div class="calc-block__line">
+                                Жиры <span class="calc-block__count">97 гр.</span>
+                            </div>
+                            <div class="calc-block__line">
+                                Углеводы <span class="calc-block__count">97 гр.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product-slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <a href="javascript:;" class="product-slider__item swiper-slide">
+                            <div class="product-slider__top">
+                                <div class="product-slider__name">1 Прием</div>
+                                <div class="product-slider__info">180 г</div>
+                                <div class="product-slider__info">296 кКал</div>
+                            </div>
+                            <div class="product-slider__pict">
+                                <img class="product-slider__img" src="./local/img/product.jpg" alt="">
+                            </div>
+                            <div class="product-slider__text">
+                                Фриттата с творогом, брокколи, моцареллой
+                            </div>
+                        </a>
+                        <a href="javascript:;" class="product-slider__item swiper-slide">
+                            <div class="product-slider__top">
+                                <div class="product-slider__name">2 Прием</div>
+                                <div class="product-slider__info">180 г</div>
+                                <div class="product-slider__info">296 кКал</div>
+                            </div>
+                            <div class="product-slider__pict">
+                                <img class="product-slider__img" src="./local/img/product.jpg" alt="">
+                            </div>
+                            <div class="product-slider__text">
+                                Фриттата с творогом, брокколи, моцареллой
+                            </div>
+                        </a>
+                        <a href="javascript:;" class="product-slider__item swiper-slide">
+                            <div class="product-slider__top">
+                                <div class="product-slider__name">3 Прием</div>
+                                <div class="product-slider__info">180 г</div>
+                                <div class="product-slider__info">296 кКал</div>
+                            </div>
+                            <div class="product-slider__pict">
+                                <img class="product-slider__img" src="./local/img/product.jpg" alt="">
+                            </div>
+                            <div class="product-slider__text">
+                                Фриттата с творогом, брокколи, моцареллой
+                            </div>
+                        </a>
+                        <a href="javascript:;" class="product-slider__item swiper-slide">
+                            <div class="product-slider__top">
+                                <div class="product-slider__name">4 Прием</div>
+                                <div class="product-slider__info">180 г</div>
+                                <div class="product-slider__info">296 кКал</div>
+                            </div>
+                            <div class="product-slider__pict">
+                                <img class="product-slider__img" src="./local/img/product.jpg" alt="">
+                            </div>
+                            <div class="product-slider__text">
+                                Фриттата с творогом, брокколи, моцареллой
+                            </div>
+                        </a>
+                        <a href="javascript:;" class="product-slider__item swiper-slide">
+                            <div class="product-slider__top">
+                                <div class="product-slider__name">5 Прием</div>
+                                <div class="product-slider__info">180 г</div>
+                                <div class="product-slider__info">296 кКал</div>
+                            </div>
+                            <div class="product-slider__pict">
+                                <img class="product-slider__img" src="./local/img/product.jpg" alt="">
+                            </div>
+                            <div class="product-slider__text">
+                                Фриттата с творогом, брокколи, моцареллой
+                            </div>
+                        </a>
+                    </div>
+                    <a href="javascript:;" class="product-slider__next"></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

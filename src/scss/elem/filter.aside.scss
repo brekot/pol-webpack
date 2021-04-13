@@ -4,13 +4,28 @@
     @include media-breakpoint-down(sm)
     {
         & {
-            margin: 0 0 25px;
+            margin: 0 auto 25px;
             padding: 0 20px;
             display: flex;
+            justify-content: space-between;
+            max-width: 300px;
 
-            &__part {
-                width: 50%;
+            &__part_right {
+                padding: 30px 0 0;
             }
+        }
+    }
+}
+
+.filter-aside-head {
+    background-color: var(--review-bg);
+    overflow: hidden;
+    margin: 0px 0 -40px;
+
+    @include media-breakpoint-up(md)
+    {
+        & {
+            display: none;
         }
     }
 }
