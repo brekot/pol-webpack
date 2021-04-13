@@ -29,11 +29,15 @@
     }
     @include media-breakpoint-down(sm)
     {
-        &__inner {
-            overflow-x: auto;
-        }
-        &__link {
-            margin: 0 20px 0 0;
+        & {
+            padding: 10px 0 30px
+
+            &__inner {
+                overflow-x: auto;
+            }
+            &__link {
+                margin: 0 20px 0 0;
+            }
         }
     }
 }
