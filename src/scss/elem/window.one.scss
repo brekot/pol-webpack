@@ -1,0 +1,43 @@
+.fancybox-bg {
+    background: var(--modal-bg);
+}
+
+.window-one {
+    display: none;
+    border-radius: 5px;
+
+    &_no-padding {
+        padding: 0;
+    }
+    &__close {
+        position: absolute;
+        height: 31px;
+        width: 31px;
+        right: 20px;
+        top: 20px;
+
+        &:before,
+        &:after {
+            content: "";
+            height: 100%;
+            width: 1px;
+            background-color: var(--black);
+            position: absolute;
+            left: 50%;
+        }
+        &:before {
+            transform: rotate(45deg);
+        }
+        &:after {
+            transform: rotate(-45deg);
+        }
+    }
+
+    @include media-breakpoint-down(md)
+    {
+        &__close {
+            right: 15px;
+            top: 15px;
+        }
+    }
+}

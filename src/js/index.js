@@ -23,6 +23,7 @@ $(function() {
             //"thumbs",
             "close"
         ],
+        modal: true,
     });
 
     // Раскрытие | Скрытие меню

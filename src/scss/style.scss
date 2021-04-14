@@ -7,6 +7,7 @@
 
 // lib
 @import "./lib/swiper"; // Swiper
+@import '~@fancyapps/fancybox/dist/jquery.fancybox.min.css'; // Fancybox
 
 // Элементы
 @import "./elem/elem"; // Элементы
@@ -22,9 +23,11 @@
 @import "./elem/calc.block"; // Расчет
 @import "./elem/product.list"; // Товары список
 @import "./elem/product.slider"; // Товары слайдер
+@import "./elem/product.detail"; // Товары детально
 @import "./elem/star.block"; // Звезды
 @import "./elem/like.block"; // Лайки
 @import "./elem/page.nav"; // Постраничная навигация
+@import "./elem/window.one"; // Окно #1
 
 // Шаблон
 @import "./template/header"; // Шапка
