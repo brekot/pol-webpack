@@ -1,0 +1,55 @@
+<% var data = {
+    title: "SMS"
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<!-- Заголовок страницы -->
+<div class="page-head">
+    <div class="container">
+        <div class="title-leaf">
+            <svg class="title-leaf__icon title-leaf__icon_v1">
+                <use xlink:href="./local/img/sprite.svg#leaf"></use>
+            </svg>
+            <h1 class="text-center mb-0 color-purple">Войти</h1>
+        </div>
+    </div>
+</div>
+
+<div class="sms-form">
+    <div class="container">
+        <div class="sms-form__block">
+            <div class="sms-form__text-top">
+                Мы отправили вам<br>
+                СМС-сообщение с кодом на номер<br>
+                <b>+77777777777</b>
+            </div>
+            <div class="sms-form__text-middle">
+                Введите код из смс
+            </div>
+
+            <div class="form-two">
+                <form action="">
+                    <div class="sms-form__inner">
+                        <div class="form-two__line">
+                            <input type="text" class="form-two__input text-center" placeholder="_ _ _ - _ _ _">
+                        </div>
+                        <div class="sms-form__text-bottom">
+                            Отправить повторно<br>
+                            через 26 секунд
+                        </div>
+                    </div>
+                    <div class="form-two__btn">
+                        <button type="submit" class="btn btn-purple btn-full-width">ОТПРАВИТЬ</button>
+                    </div>
+                    <div class="form-two__personal">
+                        Нажимая кнопку "Отправить", Вы даете согласие на обработку персональных данных.
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

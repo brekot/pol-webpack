@@ -1,0 +1,39 @@
+.sms-form {
+    background-color: var(--grey-bg);
+    margin: -20px 0 0;
+    padding: 0 0 110px;
+    text-align: center;
+
+    &__block {
+        max-width: 390px;
+        margin: auto;
+        width: 100%;
+    }
+    &__text-middle {
+        margin: 25px 0 35px;
+    }
+    &__inner {
+        width: 210px;
+        margin: 0 auto 50px;
+    }
+    &__text-bottom {
+        color: var(--grey5);
+    }
+
+    @include media-breakpoint-down(md)
+    {
+        & {
+            margin: 0;
+            padding: 20px 0 45px;
+
+            &__text-middle {
+                margin: 20px 0;
+                font-size: 16px;
+            }
+            &__inner {
+                width: 260px;
+                margin: 0 auto 25px;
+            }
+        }
+    }
+}

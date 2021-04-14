@@ -1,6 +1,8 @@
 import $ from "jquery";
-import formstyler from './lib/jquery.formstyler.js';
 import Swiper from './lib/swiper.js';
+
+import './lib/jquery.formstyler.js';
+import './lib/jquery.masked.input.js';
 
 window.jQuery = $;
 window.$ = $;
@@ -44,6 +46,9 @@ $(function() {
 			$('.menu-top').removeClass('menu-top_active');
 		}
 	});
+
+    // Маска для телефона
+	$(".js-phone-mask").mask("+7 ( 999 ) 999 99 99");
 
     new Swiper('.product-slider', {
         spaceBetween: 30,

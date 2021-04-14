@@ -1,0 +1,16 @@
+.registration-form {
+    background-color: var(--grey-bg);
+
+    &__block {
+        max-width: 470px;
+        margin: auto;
+        padding: 0 0 110px;
+    }
+
+    @include media-breakpoint-down(md)
+    {
+        &__block {
+            padding: 0 0 50px;
+        }
+    }
+}

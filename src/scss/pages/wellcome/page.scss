@@ -1,0 +1,21 @@
+.wellcome-page {
+    padding: 125px 0 180px;
+    background-color: var(--grey-bg);
+
+    &__btn {
+        max-width: 340px;
+        margin: 75px auto 0;
+    }
+
+    @include media-breakpoint-down(md)
+    {
+        & {
+            padding: 70px 0;
+
+            &__btn {
+                max-width: 210px;
+                margin: 55px auto 0;
+            }
+        }
+    }
+}

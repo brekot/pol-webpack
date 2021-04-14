@@ -1,0 +1,25 @@
+<% var data = {
+    title: "Добро пожаловать"
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<!-- Заголовок страницы -->
+<div class="wellcome-page">
+    <div class="container">
+        <div class="title-leaf">
+            <svg class="title-leaf__icon title-leaf__icon_v1">
+                <use xlink:href="./local/img/sprite.svg#leaf"></use>
+            </svg>
+            <h1 class="text-center mb-0 color-purple">
+                Добро пожаловать,<br>
+                Геннадий
+            </h1>
+        </div>
+        <div class="wellcome-page__btn">
+            <a href="javascript:;" class="btn btn-purple btn-full-width">Выбрать план питания</a>
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
 
-        <title>Polzabox - Вход (с ошибками)</title>
+        <title>Polzabox - SMS</title>
         <link rel="shortcut icon" href="favicon.ico" />
         <link href="./local/template_styles.css?fbe93a75830b34ac49de" rel="stylesheet" />
     </head>
@@ -65,32 +65,34 @@
                     </div>
                 </div>
 
-                <div class="auth-form">
+                <div class="sms-form">
                     <div class="container">
-                        <div class="auth-form__registration">
-                            <a href="javascript:;">Зарегистрироваться</a>
-                        </div>
-                        <div class="auth-form__block">
+                        <div class="sms-form__block">
+                            <div class="sms-form__text-top">
+                                Мы отправили вам<br />
+                                СМС-сообщение с кодом на номер<br />
+                                <b>+77777777777</b>
+                            </div>
+                            <div class="sms-form__text-middle">
+                                Введите код из смс
+                            </div>
+
                             <div class="form-two">
                                 <form action="">
-                                    <div class="form-two__line form-two__line_error">
-                                        <div class="form-two__error">Некорректные данные</div>
-                                        <label class="form-two__label">Введите свой телефон или e-mail</label>
-                                        <input type="text" class="form-two__input" />
-                                    </div>
-                                    <div class="form-two__line form-two__line_error">
-                                        <div class="form-two__error">Неправильный пароль</div>
-                                        <label class="form-two__label">Введите свой пароль</label>
-                                        <input type="password" class="form-two__input" />
-                                    </div>
-                                    <div class="auth-form__remember">
-                                        <a href="javascript:;" class="auth-form__remember-link">Забыли пароль?</a>
+                                    <div class="sms-form__inner">
+                                        <div class="form-two__line">
+                                            <input type="text" class="form-two__input text-center" placeholder="_ _ _ - _ _ _" />
+                                        </div>
+                                        <div class="sms-form__text-bottom">
+                                            Отправить повторно<br />
+                                            через 26 секунд
+                                        </div>
                                     </div>
                                     <div class="form-two__btn">
-                                        <button type="submit" class="btn btn-purple btn-full-width">ВОЙТИ</button>
+                                        <button type="submit" class="btn btn-purple btn-full-width">ОТПРАВИТЬ</button>
                                     </div>
                                     <div class="form-two__personal">
-                                        Нажимая кнопку "Далее", Вы даете согласие на обработку персональных данных.
+                                        Нажимая кнопку "Отправить", Вы даете согласие на обработку персональных данных.
                                     </div>
                                 </form>
                             </div>

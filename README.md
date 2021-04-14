@@ -3,6 +3,8 @@
 <a href="https://brekot.github.io/pol-webpack/auth.html">Вход</a><br>
 <a href="https://brekot.github.io/pol-webpack/auth-error.html">Вход (с ошибками)</a><br>
 <a href="https://brekot.github.io/pol-webpack/auth-pass.html">Вход (новый пароль)</a><br>
+<a href="https://brekot.github.io/pol-webpack/sms.html">SMS</a><br>
+<a href="https://brekot.github.io/pol-webpack/wellcome.html">Добро пожаловать</a><br>
 
 <hr>
 
@@ -13,6 +15,7 @@
 <b>Подключены в JS:</b><br>
 <ul>
     <li>jQuery</li>
+    <li>jQuery masked input - для ввода телефона</li>
     <li>Swiper - для слайдеров (https://swiperjs.com/)</li>
     <li>formStyler - для стилизации select (http://dimox.name/jquery-form-styler/)</li>
     <li>FancyBox - для окон (https://fancyapps.com/fancybox/3/)</li>
