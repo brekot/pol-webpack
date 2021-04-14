@@ -1,0 +1,105 @@
+<% var data = {
+    title: "Вход"
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<!-- Заголовок страницы -->
+<div class="page-head">
+    <div class="container">
+        <div class="title-leaf">
+            <svg class="title-leaf__icon title-leaf__icon_v1">
+                <use xlink:href="./local/img/sprite.svg#leaf"></use>
+            </svg>
+            <h1 class="text-center mb-0 color-purple">Добрый день, Геннадий</h1>
+        </div>
+    </div>
+</div>
+
+<div class="personal-page">
+    <div class="container">
+        <div class="personal-page__score">
+            У вас <b>388 баллов</b>
+        </div>
+
+        <div class="personal-blocks">
+
+            <div class="personal-block">
+                <div class="personal-block__inner">
+                    <div class="personal-block__name">План меню</div>
+                    <div class="personal-block__desc">
+                        У вас в настоящее время<br>
+                        нет плана меню
+                    </div>
+                    <div class="personal-block__btn">
+                        <a href="javascript:;" class="btn btn-purple btn-full-width">Выбрать план меню</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="personal-block form-two">
+                <div class="personal-block__inner">
+                    <div class="personal-block__name">Скидка</div>
+                    <div class="personal-block__desc">
+                        Если у вас есть промокод,<br>
+                        используйте его здесь
+                    </div>
+                    <div class="personal-block__input">
+                        <input class="form-two__input form-two__input_sm" type="text" value="">
+                    </div>
+                    <div class="personal-block__btn">
+                        <button type="submit" class="btn btn-purple btn-full-width">Применить промокод</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="personal-block form-two">
+                <div class="personal-block__inner">
+                    <div class="personal-block__name">Подарочные карты</div>
+                    <div class="personal-block__desc">
+                        Если у вас есть подарочна карта,<br>
+                        активируйте ее код здесь
+                    </div>
+                    <div class="personal-block__input">
+                        <input class="form-two__input form-two__input_sm" type="text" value="">
+                    </div>
+                    <div class="personal-block__btn">
+                        <a href="javascript:;" class="btn btn-purple btn-full-width">Активировать карту</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="personal-block form-two">
+                <div class="personal-block__inner">
+                    <div class="personal-block__name">Мои награды</div>
+                    <div class="personal-block__desc">
+                        Быстро заработать<br>
+                        и обменять награду
+                    </div>
+                    <div class="personal-block__input">
+                        <input class="form-two__input form-two__input_sm" type="text" value="">
+                    </div>
+                    <div class="personal-block__btn">
+                        <button type="submit" class="btn btn-purple btn-full-width">Посмотреть награды</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="personal-block">
+                <div class="personal-block__inner">
+                    <div class="personal-block__name">
+                        СМС-<br>
+                        уведомления
+                    </div>
+                    <div class="personal-block__btn">
+                        <a href="javascript:;" class="btn btn-purple btn-full-width">Настроить сейчас</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

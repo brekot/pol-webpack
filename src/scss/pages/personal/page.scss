@@ -1,0 +1,23 @@
+.personal-page {
+    background-color: var(--grey-bg);
+    margin: -35px 0 0;
+    padding: 0 0 100px;
+
+    &__score {
+        text-align: center;
+        margin: 0 0 70px;
+    }
+
+    @include media-breakpoint-down(md)
+    {
+        & {
+            margin: -10px 0 0;
+            padding: 0 0 15px;
+
+            &__score {
+                margin: 0 0 45px;
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -23,6 +23,10 @@
         &:focus {
             border-color: var(--purple-light2);
         }
+        &_sm {
+            height: 50px;
+            padding: 0 15px;
+        }
     }
     &__btn {
         width: 240px;

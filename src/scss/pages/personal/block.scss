@@ -1,0 +1,73 @@
+.personal-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -25px;
+
+    @include media-breakpoint-down(md)
+    {
+        & {
+            margin: 0 -15px;
+        }
+    }
+}
+
+.personal-block {
+    width: 450px;
+    box-shadow: 0 0 4px var(--personal-shadow);
+    border-radius: 5px;
+    padding: 55px 45px 45px 60px;
+    background-color: var(--white);
+    margin: 0 25px 50px;
+    min-height: 360px;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    &__name {
+        font-size: 26px;
+        font-weight: bold;
+        margin: 0 0 25px;
+    }
+    &__desc {
+        margin: 0 0 25px;
+    }
+    &__input {
+        max-width: 245px;
+        margin: 0 0 35px;
+    }
+    &__btn {
+        margin: auto 0 0;
+        max-width: 255px;
+    }
+
+    @include media-breakpoint-only(lg)
+    {
+        & {
+            width: 440px;
+        }
+    }
+    @include media-breakpoint-down(md)
+    {
+        & {
+            margin: 0 15px 30px;
+            padding: 30px;
+            width: 330px;
+            min-height: 280px;
+
+            &__name {
+                font-size: 20px;
+                margin: 0 0 20px;
+            }
+            &__desc {
+                margin: 0 0 20px;
+                font-size: 16px;
+            }
+            &__input {
+                margin: 0 0 20px;
+            }
+        }
+    }
+}

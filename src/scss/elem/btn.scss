@@ -10,6 +10,7 @@
     font-weight: bold;
     font-size: 12px;
     text-transform: uppercase;
+    transition: .5s;
 
     &-purple {
         background-color: var(--purple-dark);

@@ -5,6 +5,7 @@
 <a href="https://brekot.github.io/pol-webpack/auth-pass.html">Вход (новый пароль)</a><br>
 <a href="https://brekot.github.io/pol-webpack/sms.html">SMS</a><br>
 <a href="https://brekot.github.io/pol-webpack/wellcome.html">Добро пожаловать</a><br>
+<a href="https://brekot.github.io/pol-webpack/personal.html">Личный кабинет</a><br>
 
 <hr>
 
