@@ -1,0 +1,45 @@
+.auth-form {
+    background-color: var(--grey-bg);
+    margin: -60px 0 0;
+    padding: 0 0 65px;
+
+    &__registration {
+        text-align: center;
+        font-size: 14px;
+        line-height: 1;
+        margin: 0 0 50px;
+    }
+    &__block {
+        max-width: 390px;
+        margin: auto;
+        width: 100%;
+    }
+    &__remember {
+        text-align: right;
+        margin: -10px 0 30px;
+        line-height: 1;
+        font-size: 14px;
+
+        &-link {
+            text-decoration: none;
+            font-weight: bold;
+            color: var(--purple-light2);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md)
+    {
+        & {
+            margin: -20px 0 0;
+            padding: 0 0 40px;
+
+            &__registration {
+                margin: 0 0 45px;
+            }
+        }
+    }
+}

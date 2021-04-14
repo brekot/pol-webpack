@@ -16,6 +16,7 @@
 @import "./elem/btn"; // Кнопки
 @import "./elem/select"; // Селекты
 @import "./elem/form.one"; // Форма #1
+@import "./elem/form.two"; // Форма #2
 @import "./elem/radio.one"; // Radio #1
 @import "./elem/checkbox.one"; // Checkbox #1
 @import "./elem/filter.product"; // Фильтр и товары
@@ -46,3 +47,6 @@
 
 // Каталог
 @import "./pages/catalog/days.tab"; // Дни недели
+
+// Вход
+@import "./pages/auth/form"; // Форма

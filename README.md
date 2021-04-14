@@ -1,5 +1,8 @@
 <a href="https://brekot.github.io/pol-webpack/index.html">Главная</a><br>
 <a href="https://brekot.github.io/pol-webpack/catalog.html">Каталог</a><br>
+<a href="https://brekot.github.io/pol-webpack/auth.html">Вход</a><br>
+<a href="https://brekot.github.io/pol-webpack/auth-error.html">Вход (с ошибками)</a><br>
+<a href="https://brekot.github.io/pol-webpack/auth-pass.html">Вход (новый пароль)</a><br>
 
 <hr>
 

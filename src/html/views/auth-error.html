@@ -1,0 +1,54 @@
+<% var data = {
+    title: "Вход (с ошибками)"
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<!-- Заголовок страницы -->
+<div class="page-head">
+    <div class="container">
+        <div class="title-leaf">
+            <svg class="title-leaf__icon title-leaf__icon_v1">
+                <use xlink:href="./local/img/sprite.svg#leaf"></use>
+            </svg>
+            <h1 class="text-center mb-0 color-purple">Войти</h1>
+        </div>
+    </div>
+</div>
+
+<div class="auth-form">
+    <div class="container">
+        <div class="auth-form__registration">
+            <a href="javascript:;">Зарегистрироваться</a>
+        </div>
+        <div class="auth-form__block">
+
+            <div class="form-two">
+                <form action="">
+                    <div class="form-two__line form-two__line_error">
+                        <div class="form-two__error">Некорректные данные</div>
+                        <label class="form-two__label">Введите свой телефон или e-mail</label>
+                        <input type="text" class="form-two__input">
+                    </div>
+                    <div class="form-two__line form-two__line_error">
+                        <div class="form-two__error">Неправильный пароль</div>
+                        <label class="form-two__label">Введите свой пароль</label>
+                        <input type="password" class="form-two__input">
+                    </div>
+                    <div class="auth-form__remember">
+                        <a href="javascript:;" class="auth-form__remember-link">Забыли пароль?</a>
+                    </div>
+                    <div class="form-two__btn">
+                        <button type="submit" href="javascript:;" class="btn btn-purple btn-full-width">ВОЙТИ</button>
+                    </div>
+                    <div class="form-two__personal">
+                        Нажимая кнопку "Далее", Вы даете согласие на обработку персональных данных.
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

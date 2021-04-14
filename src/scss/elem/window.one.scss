@@ -1,5 +1,6 @@
-.fancybox-bg {
+.fancybox-is-open .fancybox-bg {
     background: var(--modal-bg);
+    opacity: 1;
 }
 
 .window-one {
@@ -8,6 +9,18 @@
 
     &_no-padding {
         padding: 0;
+    }
+    &_info {
+        width: 100%;
+        max-width: 540px;
+        text-align: center;
+        color: var(--purple-dark);
+    }
+    &_info &__body {
+        min-height: 310px;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
     }
     &__close {
         position: absolute;
@@ -35,6 +48,10 @@
 
     @include media-breakpoint-down(md)
     {
+        &_info &__body {
+            min-height: 150px;
+            font-size: 22px;
+        }
         &__close {
             right: 15px;
             top: 15px;
