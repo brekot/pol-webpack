@@ -1,0 +1,100 @@
+.order-info {
+    background-color: var(--bg1);
+    background-image: url(img/quick.order.bg.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    padding: 35px 0 45px 40px;
+    margin: 0 0 65px;
+
+    &__top {
+        display: flex;
+        font-size: 25px;
+        font-weight: bold;
+        margin: 0 0 50px;
+    
+        &-left {
+            width: 320px;
+        }
+        &-label {
+            color: var(--grey5);
+            margin: 0 0 10px;
+        }
+    }
+    &__middle {
+        margin: 0 0 40px;
+    }
+    &__label {
+        margin: 0 0 10px;
+    }
+    &__parts {
+        display: flex;
+        align-items: center;
+    }
+    &__input {
+        width: 245px;
+        margin: 0 35px 0 0;
+    }
+    &__bottom {
+        font-weight: bold;
+        font-size: 30px;
+        margin: 70px 0 0;
+    }
+    &__price {
+        color: var(--purple-dark);
+    }
+
+    @include media-breakpoint-only(lg)
+    {
+        & {
+            background-size: auto 240px;
+        }
+    }
+    @include media-breakpoint-down(md)
+    {
+        & {
+            padding: 25px 0 105px 20px;
+            background-size: auto 220px;
+
+            &__top {
+                margin: 0 0 25px;
+            }
+            &__middle {
+                margin: 0 0 35px;
+            }
+            &__bottom {
+                margin: 0;
+            }
+            &__price {
+                display: block;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            background-image: url(img/quick.order.bg.mobile.png);
+            background-size: auto;
+            margin: 0 0 25px;
+
+            &__top {
+                font-size: 18px;
+
+                &-left {
+                    width: 120px;
+                    margin: 0 60px 0 0;
+                }
+            }
+            &__parts {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+            &__input {
+                width: 210px;
+                margin: 0 0 15px;
+            }
+            &__bottom {
+                font-size: 18px;
+            }
+        }
+    }
+}

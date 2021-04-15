@@ -63,3 +63,12 @@
 // Личный кабинет
 @import "./pages/personal/page"; // Страница
 @import "./pages/personal/block"; // Блоки
+
+// Оформить заказ
+@import "./pages/order/head"; // Заголовки
+@import "./pages/order/body"; // Блоки
+@import "./pages/order/check"; // Выбор меню
+@import "./pages/order/info"; // Информация меню
+@import "./pages/order/table"; // Таблица
+@import "./pages/order/delivery"; // Адрес и время
+@import "./pages/order/pay"; // Оплата

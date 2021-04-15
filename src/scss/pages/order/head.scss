@@ -1,0 +1,36 @@
+.order-head {
+    background-color: var(--grey-bg);
+    padding: 35px 0;
+    font-size: 30px;
+
+    &_top {
+        padding: 20px 0 25px;
+        border-bottom: 1px solid var(--grey5);
+    }
+    &__inner {
+        display: flex;
+    }
+    &__step {
+        font-weight: 300;
+        color: var(--purple-light2);
+        margin: 0 25px 0 0;
+    }        
+    &__name {
+        font-weight: bold;
+    }
+
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            font-size: 18px;
+            padding: 20px 0;
+
+            &__step {
+                margin: 0 10px 0 0;
+            }
+            &__name {
+                width: calc(100% - 65px);
+            }
+        }
+    }
+}

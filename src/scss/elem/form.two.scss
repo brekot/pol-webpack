@@ -8,6 +8,10 @@
         font-weight: bold;
         color: var(--grey5);
         margin: 0 0 10px 25px;
+
+        &-normal {
+            font-weight: normal;
+        }
     }
     &__input {
         height: 60px;
@@ -62,8 +66,12 @@
     {
         &__label,
         &__error {
-            margin: 0 0 10px;
+            margin-left: 0;
             text-align: center;
+        }
+        &__label_no-center {
+            text-align: left;
+            margin-left: 10px;
         }
         &__input {
             height: 50px;

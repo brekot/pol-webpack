@@ -1,0 +1,201 @@
+.order-table {
+
+    &__title {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 0 0 20px;
+
+        &-num {
+            font-weight: normal;
+        }
+    }
+    &__blocks {
+        border-bottom: 1px solid var(--purple-light2);
+    }
+    &__block:nth-child(2n+1) {
+        background-color: var(--bg1);
+    }
+
+    @include media-breakpoint-down(sm)
+    {
+        &__title {
+            font-size: 16px;
+            margin: 0 0 15px 20px;
+        }
+    }
+}
+
+.order-table-link {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding: 0 40px;
+    text-decoration: none;
+    color: var(--black);
+    position: relative;
+
+    &:hover {
+        color: var(--black);
+    }
+    &:after {
+        content: "";
+        height: 20px;
+        width: 20px;
+        border-bottom: 2px solid var(--purple-dark);
+        border-right: 2px solid var(--purple-dark);
+        transform: rotate(45deg);
+        position: absolute;
+        left: 720px;
+        top: 23px;
+    }
+    &_active:after {
+        transform: rotate(225deg);
+        top: 36px;
+    }
+    &__day {
+        font-weight: 900;
+        color: var(--purple-dark);
+        width: 80px;
+        text-transform: uppercase;
+    }
+    &__kk {
+        font-weight: bold;
+        width: 145px;
+    }
+    &__count {
+        font-size: 18px;
+    }
+    &__num {
+        color: var(--purple-light2);
+        width: 75px;
+        display: inline-block;
+    }
+
+    @include media-breakpoint-only(md)
+    {
+        & {
+            padding: 0 20px;
+
+            &:after {
+                left: 645px;
+            }
+            &__kk {
+                width: 120px;
+            }
+            &__num {
+                width: 65px;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            height: auto;
+            padding: 20px;
+            flex-wrap: wrap;
+
+            &:after {
+                height: 16px;
+                width: 16px;
+                left: auto;
+                top: 17px;
+                right: 20px;
+            }
+            &_active:after {
+                top: 26px;
+            }
+            &__day {
+                width: 70px;
+            }
+            &__kk {
+                width: calc(100% - 70px);
+            }
+            &__count {
+                font-size: 12px;
+                display: flex;
+                margin: 20px 30px 0 0;
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+            &__num {
+                font-size: 16px;
+                width: auto;
+                font-weight: bold;
+                color: var(--purple-dark);
+            }
+        }
+    }
+}
+
+.order-table-step {
+    display: none;
+
+    &__items {
+        padding: 25px 0 35px 40px;
+        display: flex;
+    }
+    &__item {
+        width: calc(100% / 6);
+        padding: 0 20px 0 0;
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0 0 10px;
+    }
+    &__count {
+        font-size: 14px;
+        display: flex;
+        color: var(--purple-light);
+        margin: 0 0 10px;
+
+        &-first {
+            margin: 0 15px 0 0;
+            position: relative;
+
+            &:after {
+                content: "";
+                height: 4px;
+                width: 4px;
+                background-color: var(--purple-dark);
+                position: absolute;
+                border-radius: 50%;
+                top: 50%;
+                transform: translate(0, -50%);
+                right: -10px;
+            }
+        }
+    }
+    &__text {
+        font-size: 12px;
+    }
+
+    @include media-breakpoint-down(md)
+    {
+        &__items {
+            padding: 10px 0 25px 20px;
+            overflow-x: auto;
+        }
+        &__item {
+            padding: 0 15px 0 0;
+            width: auto;
+        }
+        &__count {
+            min-width: 120px;
+            white-space: nowrap;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        &__name {
+            font-size: 16px;
+            margin: 0 0 5px;
+        }
+        &__count {
+            font-size: 12px;
+        }
+        &__text {
+            font-size: 10px;
+        }
+    }
+}

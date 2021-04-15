@@ -50,11 +50,20 @@ $(function() {
     // Маска для телефона
 	$(".js-phone-mask").mask("+7 ( 999 ) 999 99 99");
 
+    // Слайдер продуктов
     new Swiper('.product-slider', {
         spaceBetween: 30,
         navigation: {
             nextEl: '.product-slider__next',
             disabledClass: 'product-slider__str_disabled'
         },
+    });
+
+    // Раскрытие "Ваше меню" при оформлении заказа
+    $('.order-table-link').on('click', function(){
+
+        $(this).toggleClass('order-table-link_active');
+
+        $(this).next('.order-table-step').slideToggle()
     });
 });

@@ -1,0 +1,29 @@
+.pay-block {
+
+    &__top {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    &__price {
+        color: var(--purple-dark);
+    }
+    &__middle {
+        margin: 60px 0 80px;
+    }
+
+    @include media-breakpoint-down(md)
+    {
+        &__middle {
+            margin: 20px 0 30px;
+        }
+        &__bottom {
+            margin: 0 0 20px;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        &__top {
+            font-size: 16px;
+        }
+    }
+}

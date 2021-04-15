@@ -1,0 +1,495 @@
+<% var data = {
+    title: "Оформить заказ"
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<!-- Заголовок страницы -->
+<div class="page-head">
+    <div class="container">
+        <div class="title-leaf">
+            <svg class="title-leaf__icon title-leaf__icon_v1">
+                <use xlink:href="./local/img/sprite.svg#leaf"></use>
+            </svg>
+            <h1 class="text-center mb-0 color-purple">Оформить заказ</h1>
+        </div>
+    </div>
+</div>
+
+<!-- Заголовок "Выберите меню" -->
+<div class="order-head order-head_top">
+    <div class="container">
+        <div class="order-head__inner">
+            <div class="order-head__step">1 из 3</div>
+            <div class="order-head__name">Выберите меню</div>
+        </div>
+    </div>
+</div>
+
+<!-- Выберите меню -->
+<div class="order-body">
+    <div class="container">
+
+        <div class="order-check form-one">
+            <div class="order-check__item">
+                <div class="form-one__label form-one__label_grey form-one__label_big-margin">
+                    Выберите тип<br>
+                    диеты
+                </div>
+                <label class="radio-one">
+                    <input type="radio" class="radio-one__input" name="check1" checked>
+                    <div class="radio-one__point"></div>
+                    <div class="radio-one__label">
+                        Щадящая
+                    </div>
+                </label>
+                <label class="radio-one">
+                    <input type="radio" class="radio-one__input" name="check1">
+                    <div class="radio-one__point"></div>
+                    <div class="radio-one__label">
+                        Диабет 2 типа
+                    </div>
+                </label>
+            </div>
+            <div class="order-check__item">
+                <div class="form-one__label form-one__label_grey form-one__label_big-margin">
+                    Выберите<br>
+                    количество калорий
+                </div>
+                <label class="radio-one">
+                    <input type="radio" class="radio-one__input" name="check2" checked>
+                    <div class="radio-one__point"></div>
+                    <div class="radio-one__label">
+                        Слим <b>1200 ккал</b>
+                    </div>
+                </label>
+                <label class="radio-one">
+                    <input type="radio" class="radio-one__input" name="check2">
+                    <div class="radio-one__point"></div>
+                    <div class="radio-one__label">
+                        Лайт <b>1600 ккал</b>
+                    </div>
+                </label>
+                <label class="radio-one">
+                    <input type="radio" class="radio-one__input" name="check2">
+                    <div class="radio-one__point"></div>
+                    <div class="radio-one__label">
+                        Стандарт <b>2000 ккал</b>
+                    </div>
+                </label>
+            </div>
+            <div class="order-check__item order-check__item_padding">
+                <div class="form-one__label form-one__label_grey form-one__label_big-margin">
+                    Количество дней
+                </div>
+                <div class="two-parts">
+                    <div class="two-parts__item">
+                        <label class="radio-one">
+                            <input type="radio" class="radio-one__input" name="check3" checked>
+                            <div class="radio-one__point"></div>
+                            <div class="radio-one__label">
+                                2
+                            </div>
+                        </label>
+                        <label class="radio-one">
+                            <input type="radio" class="radio-one__input" name="check3">
+                            <div class="radio-one__point"></div>
+                            <div class="radio-one__label">
+                                3
+                            </div>
+                        </label>
+                        <label class="radio-one">
+                            <input type="radio" class="radio-one__input" name="check3">
+                            <div class="radio-one__point"></div>
+                            <div class="radio-one__label">
+                                6
+                            </div>
+                        </label>
+                    </div>
+                    <div class="two-parts__item">
+                        <label class="radio-one">
+                            <input type="radio" class="radio-one__input" name="check3" checked>
+                            <div class="radio-one__point"></div>
+                            <div class="radio-one__label">
+                                12
+                            </div>
+                        </label>
+                        <label class="radio-one">
+                            <input type="radio" class="radio-one__input" name="check3">
+                            <div class="radio-one__point"></div>
+                            <div class="radio-one__label">
+                                20
+                            </div>
+                        </label>
+                        <label class="radio-one">
+                            <input type="radio" class="radio-one__input" name="check3">
+                            <div class="radio-one__point"></div>
+                            <div class="radio-one__label">
+                                28
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="order-check__item order-check__item_padding">
+                <div class="form-one__label form-one__label_grey form-one__label_big-margin">
+                    Тип меню
+                </div>
+                <label class="radio-one">
+                    <input type="radio" class="radio-one__input" name="check4" checked>
+                    <div class="radio-one__point"></div>
+                    <div class="radio-one__label">
+                        Базовое
+                    </div>
+                </label>
+                <label class="radio-one">
+                    <input type="radio" class="radio-one__input" name="check4">
+                    <div class="radio-one__point"></div>
+                    <div class="radio-one__label">
+                        Рыбное
+                    </div>
+                </label>
+                <label class="radio-one">
+                    <input type="radio" class="radio-one__input" name="check4">
+                    <div class="radio-one__point"></div>
+                    <div class="radio-one__label">
+                        Безлактозное
+                    </div>
+                </label>
+            </div>
+            <div class="order-check__bottom">
+                <label class="checkbox-one">
+                    <input type="checkbox" class="checkbox-one__input" name="">
+                    <div class="checkbox-one__point"></div>
+                    <div class="checkbox-one__label">
+                        Без завтраков <b class="color-purple">1087 руб./день</b>
+                    </div>
+                </label>
+            </div>
+        </div>
+
+        <div class="order-info form-one">
+            <div class="order-info__top">
+                <div class="order-info__top-left">
+                    <div class="order-info__top-label">Итог:</div>
+                    <div class="order-info__top-value">6 приемов на 2 дня</div>
+                </div>
+                <div class="order-info__top-right">
+                    <div class="order-info__top-label">Цена:</div>
+                    <div class="order-info__top-value">4 750 руб.</div>
+                </div>
+            </div>
+            <div class="order-info__middle">
+                <div class="order-info__label">
+                    Использовать промокод:
+                </div>
+                <div class="order-info__parts">
+                    <div class="order-info__input">
+                        <input type="text" class="form-one__input">
+                    </div>
+                    <div class="order-info__btn">
+                        <button type="button" class="btn btn-purple">Применить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="order-info__middle">
+                <div class="order-info__label">
+                    Использовать баллы<br>
+                    (у вас 45 баллов)
+                </div>
+                <div class="order-info__parts">
+                    <div class="order-info__input">
+                        <input type="text" class="form-one__input">
+                    </div>
+                    <div class="order-info__btn">
+                        <button type="button" class="btn btn-purple">Применить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="order-info__bottom">
+                Цена с учетом скидки <span class="order-info__price">4 550 руб.</span>
+            </div>
+        </div>
+
+        <div class="order-table">
+            <div class="order-table__title">
+                Ваше меню <span class="order-table__title-num">(Заказ № 1111)</span>
+            </div>
+            <div class="order-table__blocks">
+                <div class="order-table__block">
+                    <a href="javascript:;" class="order-table-link">
+                        <div class="order-table-link__day">1 день</div>
+                        <div class="order-table-link__kk">1668 кКал</div>
+                        <div class="order-table-link__count">
+                            Белки
+                            <span class="order-table-link__num">97 гр.</span>
+                        </div>
+                        <div class="order-table-link__count">
+                            Жиры
+                            <span class="order-table-link__num">97 гр.</span>
+                        </div>
+                        <div class="order-table-link__count">
+                            Углеводы
+                            <span class="order-table-link__num">97 гр.</span>
+                        </div>
+                    </a>
+                    <div class="order-table-step">
+                        <div class="order-table-step__items">
+                            <div class="order-table-step__item">
+                                <div class="order-table-step__name">1 прием</div>
+                                <div class="order-table-step__count">
+                                    <span class="order-table-step__count-first">180 г</span>
+                                    <span class="order-table-step__count-last"></span>296 кКал</span>
+                                </div>
+                                <div class="order-table-step__text">Фриттата с творогом, брокколи, моцареллой</div>
+                            </div>
+                            <div class="order-table-step__item">
+                                <div class="order-table-step__name">2 прием</div>
+                                <div class="order-table-step__count">
+                                    <span class="order-table-step__count-first">180 г</span>
+                                    <span class="order-table-step__count-last"></span>296 кКал</span>
+                                </div>
+                                <div class="order-table-step__text">Фриттата с творогом, брокколи, моцареллой</div>
+                            </div>
+                            <div class="order-table-step__item">
+                                <div class="order-table-step__name">3 прием</div>
+                                <div class="order-table-step__count">
+                                    <span class="order-table-step__count-first">180 г</span>
+                                    <span class="order-table-step__count-last"></span>296 кКал</span>
+                                </div>
+                                <div class="order-table-step__text">Фриттата с творогом, брокколи, моцареллой</div>
+                            </div>
+                            <div class="order-table-step__item">
+                                <div class="order-table-step__name">4 прием</div>
+                                <div class="order-table-step__count">
+                                    <span class="order-table-step__count-first">180 г</span>
+                                    <span class="order-table-step__count-last"></span>296 кКал</span>
+                                </div>
+                                <div class="order-table-step__text">Фриттата с творогом, брокколи, моцареллой</div>
+                            </div>
+                            <div class="order-table-step__item">
+                                <div class="order-table-step__name">5 прием</div>
+                                <div class="order-table-step__count">
+                                    <span class="order-table-step__count-first">180 г</span>
+                                    <span class="order-table-step__count-last"></span>296 кКал</span>
+                                </div>
+                                <div class="order-table-step__text">Фриттата с творогом, брокколи, моцареллой</div>
+                            </div>
+                            <div class="order-table-step__item">
+                                <div class="order-table-step__name">6 прием</div>
+                                <div class="order-table-step__count">
+                                    <span class="order-table-step__count-first">180 г</span>
+                                    <span class="order-table-step__count-last"></span>296 кКал</span>
+                                </div>
+                                <div class="order-table-step__text">Фриттата с творогом, брокколи, моцареллой</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-table__block">
+                    <a href="javascript:;" class="order-table-link">
+                        <div class="order-table-link__day">2 день</div>
+                        <div class="order-table-link__kk">1568 кКал</div>
+                        <div class="order-table-link__count">
+                            Белки
+                            <span class="order-table-link__num">197 гр.</span>
+                        </div>
+                        <div class="order-table-link__count">
+                            Жиры
+                            <span class="order-table-link__num">97 гр.</span>
+                        </div>
+                        <div class="order-table-link__count">
+                            Углеводы
+                            <span class="order-table-link__num">197 гр.</span>
+                        </div>
+                    </a>
+                    <div class="order-table-step">
+                        <div class="order-table-step__items">
+                            <div class="order-table-step__item">
+                                <div class="order-table-step__name">1 прием</div>
+                                <div class="order-table-step__count">
+                                    <span class="order-table-step__count-first">180 г</span>
+                                    <span class="order-table-step__count-last"></span>296 кКал</span>
+                                </div>
+                                <div class="order-table-step__text">Фриттата с творогом, брокколи, моцареллой</div>
+                            </div>
+                            <div class="order-table-step__item">
+                                <div class="order-table-step__name">2 прием</div>
+                                <div class="order-table-step__count">
+                                    <span class="order-table-step__count-first">180 г</span>
+                                    <span class="order-table-step__count-last"></span>296 кКал</span>
+                                </div>
+                                <div class="order-table-step__text">Фриттата с творогом, брокколи, моцареллой</div>
+                            </div>
+                            <div class="order-table-step__item">
+                                <div class="order-table-step__name">3 прием</div>
+                                <div class="order-table-step__count">
+                                    <span class="order-table-step__count-first">180 г</span>
+                                    <span class="order-table-step__count-last"></span>296 кКал</span>
+                                </div>
+                                <div class="order-table-step__text">Фриттата с творогом, брокколи, моцареллой</div>
+                            </div>
+                            <div class="order-table-step__item">
+                                <div class="order-table-step__name">4 прием</div>
+                                <div class="order-table-step__count">
+                                    <span class="order-table-step__count-first">180 г</span>
+                                    <span class="order-table-step__count-last"></span>296 кКал</span>
+                                </div>
+                                <div class="order-table-step__text">Фриттата с творогом, брокколи, моцареллой</div>
+                            </div>
+                            <div class="order-table-step__item">
+                                <div class="order-table-step__name">5 прием</div>
+                                <div class="order-table-step__count">
+                                    <span class="order-table-step__count-first">180 г</span>
+                                    <span class="order-table-step__count-last"></span>296 кКал</span>
+                                </div>
+                                <div class="order-table-step__text">Фриттата с творогом, брокколи, моцареллой</div>
+                            </div>
+                            <div class="order-table-step__item">
+                                <div class="order-table-step__name">6 прием</div>
+                                <div class="order-table-step__count">
+                                    <span class="order-table-step__count-first">180 г</span>
+                                    <span class="order-table-step__count-last"></span>296 кКал</span>
+                                </div>
+                                <div class="order-table-step__text">Фриттата с творогом, брокколи, моцареллой</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Заголовок "Адрес и время доставки" -->
+<div class="order-head">
+    <div class="container">
+        <div class="order-head__inner">
+            <div class="order-head__step">2 из 3</div>
+            <div class="order-head__name">Укажите адрес и&nbsp;время&nbsp;доставки</div>
+        </div>
+    </div>
+</div>
+
+<!-- Адрес и время доставки -->
+<div class="order-body">
+    <div class="container">
+        <div class="order-body__padding">
+
+            <div class="form-two">
+                <div class="delivery-block">
+                    <div class="delivery-block__addr">
+                        <div class="form-two__line">
+                            <label class="form-two__label form-two__label_no-center">Введите адрес доставки <span class="form-two__label-normal">(город и улица)</span></label>
+                            <input type="text" class="form-two__input">
+                        </div>
+                        <div class="delivery-block__addr-parts">
+                            <div class="delivery-block__addr-part">
+                                <div class="form-two__line">
+                                    <label class="form-two__label form-two__label_no-center">Дом</label>
+                                    <input type="text" class="form-two__input">
+                                </div>
+                            </div>
+                            <div class="delivery-block__addr-part">
+                                <div class="form-two__line">
+                                    <label class="form-two__label form-two__label_no-center">Подъезд</label>
+                                    <input type="text" class="form-two__input">
+                                </div>
+                            </div>
+                            <div class="delivery-block__addr-part">
+                                <div class="form-two__line">
+                                    <label class="form-two__label form-two__label_no-center">Этаж</label>
+                                    <input type="text" class="form-two__input">
+                                </div>
+                            </div>
+                            <div class="delivery-block__addr-part">
+                                <div class="form-two__line">
+                                    <label class="form-two__label form-two__label_no-center">Квартира/офис</label>
+                                    <input type="text" class="form-two__input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delivery-block__time">
+                        <div class="delivery-block__time-part">
+                            <div class="form-two__line">
+                                <label class="form-two__label form-two__label_no-center">Укажите дату доставки</label>
+                                <input type="text" class="form-two__input">
+                            </div>
+                        </div>
+                        <div class="delivery-block__time-part">
+                            <div class="form-two__line">
+                                <label class="form-two__label form-two__label_no-center">Укажите время доставки</label>
+                                <input type="text" class="form-two__input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delivery-block__btn">
+                        <button type="button" class="btn btn-purple">Сохранить</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Заголовок "Оплата" -->
+<div class="order-head">
+    <div class="container">
+        <div class="order-head__inner">
+            <div class="order-head__step">3 из 3</div>
+            <div class="order-head__name">Оплата</div>
+        </div>
+    </div>
+</div>
+
+<!-- Оплата -->
+<div class="order-body">
+    <div class="container">
+        <div class="order-body__padding">
+
+            <div class="pay-block">
+                <div class="pay-block__top">
+                    Стоимость заказа <span class="pay-block__price">4 550 руб.</span>
+                </div>
+                <div class="pay-block__middle">
+                    <label class="radio-one">
+                        <input type="radio" class="radio-one__input" name="check9" checked>
+                        <div class="radio-one__point"></div>
+                        <div class="radio-one__label">
+                            Оплата картой на сайте
+                        </div>
+                    </label>
+                    <label class="radio-one">
+                        <input type="radio" class="radio-one__input" name="check9">
+                        <div class="radio-one__point"></div>
+                        <div class="radio-one__label">
+                            Оплата картой курьеру
+                        </div>
+                    </label>
+                </div>
+                <div class="pay-block__bottom">
+                    <button type="button" class="btn btn-purple" data-fancybox data-src="#window-result">Сделать заказ</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Окно "Спасибо за заказ" -->
+<div class="window-one window-one_info" id="window-result">
+    <a href="javascript:;" class="window-one__close" data-fancybox-close></a>
+    <div class="window-one__body">
+        <div>
+            <b>Спасибо за заказ!</b><br>
+            В скором времени<br>
+            наш оператор<br>
+            свяжется с вами.
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

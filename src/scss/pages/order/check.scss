@@ -1,0 +1,32 @@
+.order-check {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        width: 25%;
+    }
+    &__bottom {
+        width: 100%;
+        margin: 0 0 70px;
+    }
+
+    @include media-breakpoint-up(lg)
+    {
+        &__item {
+            margin: 0 0 50px;
+    
+            &_padding {
+                padding: 24px 0 0;
+            }
+        }
+    }
+    @include media-breakpoint-down(md)
+    {
+        &__item {
+            width: 50%;
+        }
+        &__bottom {
+            margin: 35px 0 30px;
+        }
+    }
+}

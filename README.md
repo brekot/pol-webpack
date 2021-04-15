@@ -6,6 +6,8 @@
 <a href="https://brekot.github.io/pol-webpack/sms.html">SMS</a><br>
 <a href="https://brekot.github.io/pol-webpack/wellcome.html">Добро пожаловать</a><br>
 <a href="https://brekot.github.io/pol-webpack/personal.html">Личный кабинет</a><br>
+<a href="https://brekot.github.io/pol-webpack/registration.html">Регистация</a><br>
+<a href="https://brekot.github.io/pol-webpack/order.html">Оформить заказ</a><br>
 
 <hr>
 
