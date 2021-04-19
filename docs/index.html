@@ -6,7 +6,7 @@
 
         <title>Polzabox - Главная</title>
         <link rel="shortcut icon" href="favicon.ico" />
-        <link href="./local/template_styles.css?864712d9b08ddc6c3b6e" rel="stylesheet" />
+        <link href="./local/template_styles.css?03571e7190ccf00de013" rel="stylesheet" />
     </head>
 
     <body>
@@ -19,9 +19,9 @@
                                 <span class="menu-top-btn__icon"></span>
                             </a>
                             <nav class="menu-top">
-                                <a href="javascript:;" class="menu-top__link">как это работает</a>
-                                <a href="javascript:;" class="menu-top__link">меню и тарифы</a>
-                                <a href="javascript:;" class="menu-top__link">отзывы</a>
+                                <a href="javascript:;" class="menu-top__link js-go-to" data-elem="#work">как это работает</a>
+                                <a href="javascript:;" class="menu-top__link js-go-to" data-elem="#menu">меню и тарифы</a>
+                                <a href="javascript:;" class="menu-top__link js-go-to" data-elem="#review">отзывы</a>
                                 <a href="javascript:;" class="menu-top__close"></a>
                             </nav>
                         </div>
@@ -101,7 +101,7 @@
                 </div>
 
                 <!-- Как это работает -->
-                <div class="index-work">
+                <div class="index-work" id="work">
                     <div class="container">
                         <div class="title-leaf">
                             <svg class="title-leaf__icon title-leaf__icon_v1">
@@ -150,7 +150,7 @@
                 </div>
 
                 <!-- Меню сегодня: Фильтр + Товары -->
-                <div class="filter-product">
+                <div class="filter-product" id="menu">
                     <div class="container">
                         <div class="title-leaf">
                             <svg class="title-leaf__icon title-leaf__icon_v2">
@@ -553,7 +553,7 @@
                 </div>
 
                 <!-- Отзывы -->
-                <div class="review-list">
+                <div class="review-list" id="review">
                     <div class="container">
                         <div class="title-leaf">
                             <svg class="title-leaf__icon">
@@ -897,6 +897,6 @@
                 </div>
             </footer>
         </div>
-        <script type="text/javascript" src="./local/js/script.js?864712d9b08ddc6c3b6e"></script>
+        <script type="text/javascript" src="./local/js/script.js?03571e7190ccf00de013"></script>
     </body>
 </html>

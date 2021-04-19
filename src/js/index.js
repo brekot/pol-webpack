@@ -47,6 +47,20 @@ $(function() {
 		}
 	});
 
+    $(".js-go-to").on('click', function() {
+
+        var elem = $($(this).data('elem'));
+
+        if (elem.length > 0)
+        {
+            $('html, body').animate({
+
+                scrollTop: $($(this).data('elem')).offset().top
+
+            }, 1000);
+        }
+    });
+
     // Маска для телефона
 	$(".js-phone-mask").mask("+7 ( 999 ) 999 99 99");
 
