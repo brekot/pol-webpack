@@ -47,6 +47,7 @@ $(function() {
 		}
 	});
 
+    // Прокрутка к элементу
     $(".js-go-to").on('click', function() {
 
         var elem = $($(this).data('elem'));
@@ -58,6 +59,8 @@ $(function() {
                 scrollTop: $($(this).data('elem')).offset().top
 
             }, 1000);
+
+            $('.menu-top').removeClass('menu-top_active');
         }
     });
 
