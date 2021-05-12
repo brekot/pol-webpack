@@ -23,6 +23,11 @@
         align-items: center;
         justify-content: center;
     }
+    &__title {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0 0 20px;
+    }
     &__close {
         position: absolute;
         height: 31px;

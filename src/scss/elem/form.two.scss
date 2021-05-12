@@ -1,7 +1,12 @@
 .form-two {
+    text-align: left;
 
     &__line {
         margin: 0 0 25px;
+
+        &_num {
+            max-width: 120px;
+        }
     }
     &__label {
         font-size: 14px;
@@ -31,6 +36,22 @@
             height: 50px;
             padding: 0 15px;
         }
+    }
+    &__textarea {
+        height: 60px;
+        width: 100%;
+        border: 1px solid var(--grey2);
+        border-radius: 5px;
+        padding: 15px 25px;
+        box-shadow: none;
+        transition: .5s;
+        font-size: 14px;
+        resize: none;
+        min-height: 120px;
+    }
+    &__textarea:focus,
+    &__textarea:hover {
+        border-color: var(--purple-light2);
     }
     &__btn {
         width: 240px;
@@ -64,6 +85,9 @@
 
     @include media-breakpoint-down(md)
     {
+        &__line_num {
+            margin: 0 auto 25px;
+        }
         &__label,
         &__error {
             margin-left: 0;
@@ -76,6 +100,9 @@
         &__input {
             height: 50px;
             padding: 0 15px;
+        }
+        &__textarea {
+            padding: 10px 15px;
         }
         &__btn {
             width: 220px;

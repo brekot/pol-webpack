@@ -15,6 +15,11 @@
             fill: var(--orange);
             color: var(--orange);
         }
+        &_no-active:hover {
+            fill: var(--black);
+            color: var(--black);
+            cursor: default;
+        }
     }
     &__icon {
         width: 16px;
